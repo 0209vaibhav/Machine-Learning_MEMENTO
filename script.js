@@ -29,4 +29,67 @@ document.addEventListener('DOMContentLoaded', function() {
             img.src = newSrc;
         }
     });
+
+    // Get all navigation links
+    const navLinks = document.querySelectorAll('.article-nav a');
+    
+    // Add click event listener to each link
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            // Remove active class from all links
+            navLinks.forEach(l => l.classList.remove('active'));
+            // Add active class to clicked link
+            this.classList.add('active');
+        });
+    });
+
+    // Handle scroll to update active state
+    window.addEventListener('scroll', function() {
+        const sections = document.querySelectorAll('section[id]');
+        const scrollPosition = window.scrollY;
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100; // Offset for better trigger point
+            const sectionBottom = sectionTop + section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                // Remove active class from all links
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Add active class to corresponding link
+                document.querySelector(`.article-nav a[href="#${sectionId}"]`).classList.add('active');
+            }
+        });
+    });
+
+    // Handle pipeline diagram interaction
+    const pipelineSteps = document.querySelectorAll('.pipeline-step');
+    const stepDetails = document.querySelectorAll('.step-details');
+    const pipelineDetails = document.querySelector('.pipeline-details');
+
+    // Set first step as active by default
+    if (pipelineSteps.length > 0) {
+        pipelineSteps[0].classList.add('active');
+        stepDetails[0].classList.add('active');
+        pipelineDetails.classList.add('active');
+    }
+
+    pipelineSteps.forEach(step => {
+        step.addEventListener('click', function() {
+            const stepNumber = this.getAttribute('data-step');
+            
+            // Update active state of steps
+            pipelineSteps.forEach(s => s.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update visible details
+            stepDetails.forEach(detail => {
+                detail.classList.remove('active');
+                if (detail.getAttribute('data-step') === stepNumber) {
+                    detail.classList.add('active');
+                    pipelineDetails.classList.add('active');
+                }
+            });
+        });
+    });
 });

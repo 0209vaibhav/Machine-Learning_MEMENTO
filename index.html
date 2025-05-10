@@ -3,223 +3,632 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEMENTO - Platform for Real time urban experiences</title>
+    <title>Role of Machine Learning and Computation in MEMENTO by Vaibhav Jain</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ink+Free&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="project-info">
-            <h1>MEMENTO - Platform for Real time urban experiences</h1>
-            <p class="author">by Vaibhav Jain</p>
-            <p class="advisor">Advisor: Juan Francisco Saldarriaga</p>
-            <p class="year">2025</p>
-            <div class="links">
-                <a href="https://0209vaibhav.github.io/Memento/" target="_blank">MEMENTO - platform for real time urban experiences</a><br>
-                <a href="https://gsapp-cdp.github.io/archive/projects/2025/memento/" target="_blank">MEMENTO - project documentation</a>
-            </div>
+            <h1>Role of Machine Learning and Computation in<br>
+                <span class="memento-text">MEMENTO</span><span class="author-credit">by Vaibhav Jain</span>
+            </h1>
+            <p class="course-title"><a href="https://www.arch.columbia.edu/courses/10943-5078" target="_blank">Exploring Urban Data with Machine Learning</a></p>
+            <p class="advisor">by <a href="https://www.arch.columbia.edu/faculty/5512-jonathan-stiles" target="_blank">Jonathan E. Stiles</a> in Spring 2025</p>
+            <p class="program"><a href="https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices" target="_blank">Computation Design Practices 2024-2025</a></p>
+            <p class="college"><a href="https://www.arch.columbia.edu/" target="_blank">Graduate School of Architecture, Planning and Preservation, Columbia University</a></p>
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Not just a map of locations —<br>
-                    but a real-time playground of urban experiences.<br>
-                    To resist oblivion commutes,<br>
-                    and embrace engaging odyssey journeys.<br>
-                    This is <span class="highlight">MEMENTO.</span>
-                </h2>
-                <img src="data/cover.png" alt="MEMENTO Cover" class="hero-image">
+    <section class="qr-row">
+        <div class="qr-item">
+            <a href="https://0209vaibhav.github.io/Machine-Learning_MEMENTO/" target="_blank">
+                <img src="/data/qr-codes/MEMENTO-machine learning-Vaibhav Jain.png" alt="MEMENTO Machine Learning QR">
+            </a>
+        </div>
+        <div class="qr-item">
+            <a href="https://0209vaibhav.github.io/Memento/" target="_blank">
+                <img src="/data/qr-codes/MEMENTO-platform-Vaibhav Jain.png" alt="MEMENTO Platform QR">
+            </a>
+        </div>
+        <div class="qr-item">
+            <a href="https://gsapp-cdp.github.io/archive/projects/2025/memento/" target="_blank">
+                <img src="/data/qr-codes/MEMENTO-project documentation-Vaibhav Jain.png" alt="MEMENTO Project Documentation QR">
+            </a>
+        </div>
+    </section>
+
+    <nav class="article-nav">
+        <a href="#overview-section" class="active">Overview</a>
+        <a href="#introduction-section">Introduction</a>
+        <a href="#pipeline-section">Pipeline</a>
+        <a href="#detailed-pipeline-section">Detailed Pipeline</a>
+    </nav>
+    <section class="overview-section" id="overview-section">
+        <h2>1. Overview</h2>
+        <h3>Overview of the Computation tools, methods and Machine Learning Pipeline in MEMENTO</h3>
+        <p>The Machine Learning pipeline for public mementos in MEMENTO is designed to automate the classification and tagging of public content sourced from platforms such as Secret NYC, Reddit, NYC Bucket List, Newsbreak, and more. The objective is to replace rule-based keyword matching with a robust multi-label classification model that leverages existing user-generated mementos as training data.</p>
+        <p>The pipeline consists of three primary models — Category Classification, Tag Prediction, and Duration Estimation — each trained using supervised learning techniques. Logistic Regression with One-vs-Rest strategy and Random Forest classifiers are employed to predict relevant categories and multiple tags, while Decision Trees handle ordinal duration estimation. Text data undergoes preprocessing, including tokenization, stop word removal, and TF-IDF vectorization to convert descriptions into feature vectors suitable for model training.</p>
+        <p>By implementing this ML pipeline, MEMENTO enhances the consistency and accuracy of content classification, enabling the platform to transform unstructured public content into structured, contextually enriched mementos that align with its existing taxonomy.</p>
+    </section>
+    <section class="introduction-section" id="introduction-section">
+        <h2>Introduction</h2>
+        <h3>1.1 What is MEMENTO?</h3>
+        <p>Not just a map of locations —<br>
+but a real-time playground of urban experiences.<br>
+To resist oblivion commutes,<br>
+and embrace engaging odyssey journeys.<br>
+This is MEMENTO.</p>
+        <img src="data/cover 2.png" alt="MEMENTO Cover" class="hero-image">
+        <p>MEMENTO is a real-time platform that captures urban experiences happening across the city, aiming to prevent people from drifting into oblivion (the state of being unaware or unconscious of what is happening) and instead transforming those moments into engaging odysseys (a long and eventful or adventurous journey or experience).</p>
+        <p>Unlike conventional platforms, MEMENTO invites users to look beyond the map — to notice, witness, interact, engage, record, react, and reflect on urban experiences as physical mementos, rather than merely experiencing them through virtual screens.</p>
+        <img src="data/mementos-categories,tags duration.png" alt="MEMENTO - the platform" class="section-image">
+        <p>It empowers users to discover, capture, and engage with the mementos around them during their commutes, turning everyday journeys into moments of exploration, creation, and interaction.</p>
+        <img src="data/core action diagram.svg" alt="MEMENTO - the platform" class="section-image">
+        <p>MEMENTO serves as an interaction, intersection, and interplay between the city, its people, and their experiences — a platform:<br>
+            By the people and the city,<br>
+For the people and the city,<br>
+Of the people and the city.</p>
+<img src="data/for by of copy.png" alt="MEMENTO - the platform" class="section-image">
+    </section>
+
+
+    <section class="pipeline-section" id="pipeline-section">
+        <h2>Pipeline Architecture Overview</h2>
+        <p>The MEMENTO ML pipeline is designed as a modular, five-step system that transforms raw public content into well-categorized, ML-enhanced mementos. Each step in the pipeline serves a specific purpose and contributes to the overall goal of automated content classification and enrichment.</p>
+
+        <div class="pipeline-diagram">
+            <div class="pipeline-steps-container">
+                <div class="pipeline-step" data-step="1">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>🔄 Data Processing</h4>
+                        <p>Transform raw user mementos into standardized datasets</p>
+                    </div>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step" data-step="2">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>⚙️ Data Preparation</h4>
+                        <p>Prepare data for model training</p>
+                    </div>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step" data-step="3">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>🧠 Model Training</h4>
+                        <p>Train specialized classification models</p>
+                    </div>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step" data-step="4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>🌐 Data Scraping</h4>
+                        <p>Collect and process public content</p>
+                    </div>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-step" data-step="5">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>✨ Processing & Classification</h4>
+                        <p>Apply models to classify content</p>
             </div>
-        </section>
-
-        <section class="inception">
-            <h2>How did it began - The Inception of MEMENTO</h2>
-            <p class="subtitle">Flashbacks that uncover its evolution and the journey from concept to creation.</p>
-
-            <p class="question">What if we could gamify the city experience?</p>
-
-            <p>This was the germ seed of the idea — a simple, playful thought at its inception.
-            The intention was to explore how I could combine the tools, methods, and skills I was being exposed to in the 
-            <a href="https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices" target="_blank">Computational Design Practices program at GSAPP in Columbia University</a>
-            — computation, design, AI, data-driven mapping — to create something that could reshape the way people experience the city in their everyday lives. How do we feel the city, touch it, smell it, see it?
-            Could our daily commutes become interactive, sensory-rich experiences that deepen our connection with the urban environment?</p>
-
-            <p>To explore this further, I developed a documentary <a href="https://gsapp-cdp.github.io/colloquium-2-2024/work/vaibhav/" target="_blank">research project</a> during the fall semester, where I began investigating my own relationship with the city — through self-documentation exercises, behavioral observations, and analytical mapping. The aim was to understand the problem statement through lived experience: breaking it down into key factors like body pattern, gaze, time, activity, and location, and examining how they interrelate. These insights laid the groundwork for drawing meaningful conclusions — ultimately leading to the creation of the platform: <a href="https://0209vaibhav.github.io/Memento/" target="_blank">MEMENTO</a>.</p>
-
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <img src="data/Video1-thumbnail.jpg" alt="Video 1 Thumbnail" class="video-thumbnail">
-                    <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" alt="Play Button" class="play-button">
-                    <iframe src="https://www.youtube.com/embed/55MUhbUgNd8" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                            loading="lazy"
-                            class="video-frame">
-                    </iframe>
+                </div>
+            </div>
+            <div class="pipeline-details">
+                <div class="step-details" data-step="1">
+                    <h3>🔄 Step 1: Data Processing</h3>
+                    <p>The initial step focuses on transforming raw user mementos into a standardized dataset suitable for machine learning. This step includes:</p>
+                    <div class="pipeline-detail-row">
+                        <div class="pipeline-detail-column">
+                            <h4>📥 1. Data Collection and Standardization</h4>
+                            <ul>
+                                <li>Reading raw memento data from JSON files</li>
+                                <li>Standardizing field names and data formats</li>
+                                <li>Handling missing values and data inconsistencies</li>
+                                <li>Implementing data validation checks</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🧬 2. Feature Extraction</h4>
+                            <ul>
+                                <li>Processing text fields (title, description, location)</li>
+                                <li>Extracting temporal information</li>
+                                <li>Standardizing date formats</li>
+                                <li>Handling special characters and formatting</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>✅ 3. Quality Control</h4>
+                            <ul>
+                                <li>Validating data integrity</li>
+                                <li>Checking for required fields</li>
+                                <li>Ensuring consistent data types</li>
+                                <li>Generating processing statistics</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-details" data-step="2">
+                    <h3>⚙️ Step 2: Data Preparation</h3>
+                    <p>This step prepares the processed data for model training by:</p>
+                    <div class="pipeline-detail-row">
+                        <div class="pipeline-detail-column">
+                            <h4>🪓 1. Data Splitting</h4>
+                            <ul>
+                                <li>Creating training and validation sets</li>
+                                <li>Maintaining balanced category distribution</li>
+                                <li>Preserving data integrity</li>
+                                <li>Implementing stratified sampling</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🛠️ 2. Feature Engineering</h4>
+                            <ul>
+                                <li>Creating text feature matrices</li>
+                                <li>Implementing TF-IDF vectorization</li>
+                                <li>Handling categorical variables</li>
+                                <li>Preparing label encoders</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🧹 3. Data Preprocessing</h4>
+                            <ul>
+                                <li>Text cleaning and normalization</li>
+                                <li>Feature scaling</li>
+                                <li>Handling missing values</li>
+                                <li>Preparing multi-label formats</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-details" data-step="3">
+                    <h3>🧠 Step 3: Model Training</h3>
+                    <p>The pipeline implements three specialized models for different classification tasks:</p>
+                    <div class="pipeline-detail-row">
+                        <div class="pipeline-detail-column">
+                            <h4>🌲 1. Category Classification Model</h4>
+                            <ul>
+                                <li>Type: Random Forest Classifier</li>
+                                <li>Features: Title, description, location</li>
+                                <li>Output: Category predictions with confidence scores</li>
+                                <li>Parameters: n_estimators=100, max_depth=10</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🏷️ 2. Tags Prediction Model</h4>
+                            <ul>
+                                <li>Type: Multi-label Classification</li>
+                                <li>Features: Title, description, location</li>
+                                <li>Output: Multiple tag predictions</li>
+                                <li>Parameters: threshold=0.3</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>⏳ 3. Duration Estimation Model</h4>
+                            <ul>
+                                <li>Type: Decision Tree Classifier</li>
+                                <li>Features: Title, description, location</li>
+                                <li>Output: Duration predictions</li>
+                                <li>Parameters: max_depth=5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-details" data-step="4">
+                    <h3>🌐 Step 4: Data Scraping</h3>
+                    <p>This step collects and processes public content:</p>
+                    <div class="pipeline-detail-row">
+                        <div class="pipeline-detail-column">
+                            <h4>🌐 1. Web Scraping</h4>
+                            <ul>
+                                <li>Target: Secret NYC website</li>
+                                <li>Content types: Articles, events, locations</li>
+                                <li>Extraction methods: BeautifulSoup4</li>
+                                <li>Rate limiting and error handling</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>📝 2. Content Processing</h4>
+                            <ul>
+                                <li>Text extraction and cleaning</li>
+                                <li>Date parsing and standardization</li>
+                                <li>Location extraction</li>
+                                <li>Duration estimation</li>
+                            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🔍 3. Data Validation</h4>
+                            <ul>
+                                <li>Content quality checks</li>
+                                <li>Required field validation</li>
+                                <li>Format standardization</li>
+                                <li>Error logging</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="step-details" data-step="5">
+                    <h3>✨ Step 5: Data Processing and Classification</h3>
+                    <p>The final step applies the trained models to classify scraped content:</p>
+                    <div class="pipeline-detail-row">
+                        <div class="pipeline-detail-column">
+                            <h4>🤖 1. Model Application</h4>
+                            <ul>
+                                <li>Loading trained models</li>
+                                <li>Text preprocessing</li>
+                                <li>Feature extraction</li>
+                                <li>Prediction generation</li>
+                            </ul>
+            </div>
+                        <div class="pipeline-detail-column">
+                            <h4>🛡️ 2. Quality Control</h4>
+                            <ul>
+                                <li>Confidence threshold checks</li>
+                                <li>Prediction validation</li>
+                                <li>Error handling</li>
+                                <li>Report generation</li>
+            </ul>
+                        </div>
+                        <div class="pipeline-detail-column">
+                            <h4>📦 3. Output Generation</h4>
+                            <ul>
+                                <li>Creating processed mementos</li>
+                                <li>Adding predictions and confidence scores</li>
+                                <li>Generating processing reports</li>
+                                <li>Saving results in multiple formats</li>
+            </ul>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
 
-            <div class="poem">
-                <p>Have you ever started a journey,<br>
-                reached your destination,<br>
-                but couldn't remember how you got there?</p>
-                
-                <p>The city felt like a blur,<br>
-                lost in OBLIVION,<br>
-                and the experience was disconnected —<br>
-                as if the journey never really happened.</p>
+        
+
+    <section class="detailed-pipeline-section" id="detailed-pipeline-section">
+        <h2>Detailed Pipeline Implementation and Methodology</h2>
+        <h3>Overview</h3>
+        <p>The MEMENTO ML pipeline is implemented as a modular Python system, with each step building upon the previous one to transform raw content into ML-enhanced mementos. This section provides a detailed technical breakdown of each step, including implementation details, code examples, and data flow.</p>
+
+        <hr>
+        <h2>Step 1: Data Loading and Preparation <span style="font-size:0.7em; font-weight:normal;">(step1_data_loader.py)</span></h2>
+        <h3>Overview</h3>
+        <p>The first step of the MEMENTO ML pipeline focuses on loading user mementos from Firebase and preparing them for machine learning training. This step is crucial for establishing the foundation of our ML pipeline by ensuring data quality and proper formatting.</p>
+        <h3>Purpose</h3>
+        <ul>
+            <li>Load user mementos from Firebase</li>
+            <li>Process and standardize the data</li>
+            <li>Prepare features for ML training</li>
+            <li>Save processed data for subsequent steps</li>
+        </ul>
+        <h3>Implementation Details</h3>
+        <h4>1. Class Structure and Initialization</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">class MementoDataLoader:
+    def __init__(self, 
+                 categories_path: str = None,
+                 tags_path: str = None,
+                 durations_path: str = None,
+                 firebase_credentials_path: str = None):
+        self.categories = {}
+        self.tags = {}
+        self.durations = {}
+        self.db = None
+        self.lemmatizer = WordNetLemmatizer()
+        self.stop_words = set(stopwords.words('english'))
+</code></pre>
+        <strong>Components:</strong>
+        <ul>
+            <li>Categories dictionary: Stores category mappings</li>
+            <li>Tags dictionary: Stores tag information</li>
+            <li>Durations dictionary: Stores duration configurations</li>
+            <li>Firebase database connection</li>
+            <li>NLTK components for text processing</li>
+        </ul>
+        <strong>Dependencies:</strong>
+        <ul>
+            <li>NLTK (Natural Language Toolkit)</li>
+            <li>Firebase Admin SDK</li>
+            <li>Pandas</li>
+            <li>Logging module</li>
+        </ul>
+        <h4>2. Metadata Loading</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def load_categories(self, categories_path: str):
+    logging.info(f"Loading categories from {categories_path}")
+    with open(categories_path, "r", encoding="utf-8") as f:
+        self.categories = json.load(f)
+    logging.info(f"Loaded {len(self.categories)} categories")
+
+def load_tags(self, tags_path: str) -> List[str]:
+    logging.info(f"Loading tags from {tags_path}")
+    with open(tags_path, "r", encoding="utf-8") as f:
+        tags_data = json.load(f)
+        tags = [tag["name"] for tag in tags_data]
+    logging.info(f"Loaded {len(tags)} tags")
+    return tags
+
+def load_durations(self, durations_path: str):
+    logging.info(f"Loading durations from {durations_path}")
+    with open(durations_path, "r", encoding="utf-8") as f:
+        self.durations = json.load(f)
+    logging.info(f"Loaded {len(self.durations)} durations")
+</code></pre>
+        <strong>Process:</strong>
+        <ol>
+            <li>Read JSON files containing metadata</li>
+            <li>Validate file format and content</li>
+            <li>Store metadata in class attributes</li>
+            <li>Log loading statistics</li>
+        </ol>
+        <strong>Input Files:</strong>
+        <ul>
+            <li><code>memento_categories.json</code>: Category definitions</li>
+            <li><code>memento_tags.json</code>: Tag definitions</li>
+            <li><code>memento_durations.json</code>: Duration definitions</li>
+        </ul>
+        <div class="json-scroll-lists-wrapper">
+            <div class="json-scroll-list">
+                <h4>Categories <span style="font-size:0.9em; color:#888;">(memento_categories.json)</span></h4>
+                <ul>
+                    <li>🏛️ Architecture <span class="json-id">(architecture)</span></li>
+                    <li>🌿 Urban Nature <span class="json-id">(urban-nature)</span></li>
+                    <li>🌈 Sky & Weather <span class="json-id">(sky-weather)</span></li>
+                    <li>🎭 Cultural Spotlight <span class="json-id">(cultural)</span></li>
+                    <li>🎧 Mood & Music <span class="json-id">(mood-music)</span></li>
+                    <li>🐾 Creature Sighting <span class="json-id">(creature)</span></li>
+                    <li>🍴 Street Food <span class="json-id">(street-food)</span></li>
+                    <li>👥 Social Gathering <span class="json-id">(social)</span></li>
+                    <li>⚽ Sport in Action <span class="json-id">(sport)</span></li>
+                    <li>✍️ Poetic Reflection <span class="json-id">(poetic)</span></li>
+                    <li>💡 Urban Folklore <span class="json-id">(folklore)</span></li>
+                    <li>🏗️ City in Transition <span class="json-id">(transition)</span></li>
+                    <li>⚠️ Unpleasant Spot <span class="json-id">(unpleasant)</span></li>
+                    <li>👥 Public Event <span class="json-id">(public-event)</span></li>
+                    <li>🛍️ Pop-Up Culture <span class="json-id">(popup-culture)</span></li>
+                    <li>🎮 Play & Participation <span class="json-id">(playful)</span></li>
+                    <li>🎓 City Learning <span class="json-id">(learning)</span></li>
+                    <li>🕊️ Tranquil Corners <span class="json-id">(tranquil)</span></li>
+                    <li>🧪 Experimental Urbanism <span class="json-id">(experimental)</span></li>
+                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                </ul>
             </div>
-
-            <p>Through this process, I began to observe a troubling pattern:
-            In today's technologically driven world, our relationship with urban environments has drastically changed. Modern commutes have become monotonous and disconnected, defined by passive interactions with the city. Once moments of observation and exploration, commutes are now dominated by screens, reshaping attentional habits and muscle memory. Gaze patterns, once directed outward toward the environment, now predominantly focus downward, reducing the city to a mere backdrop. This detachment diminishes meaningful engagement with urban spaces, eroding their historical, cultural, and emotional significance.</p>
-
-            <p>This realization led to the identification of a core problem!</p>
-        </section>
-
-        <section class="oblivion">
-            <h2>Oblivion</h2>
-            <p class="subtitle">the state of being unaware or unconscious of what is happening</p>
-
-            <p>An ovational study on the disconnect between people and the city, exploring gaze patterns, physical interactions, and the relationship between time, location, and activity during urban commutes.</p>
-
-            <img src="data/Oblivion step giff.gif" alt="OBLIVION - the state of being unaware or unconscious of what is happening" class="section-image">
-
-            <p>The exploration of body patterns, gaze, and time highlights how modern commuting behaviors have transformed our relationship with urban environments. Technology has reshaped physical habits, with body patterns reflecting detachment and routine, while gaze has shifted from outward exploration to a default downward focus. Similarly, time, which once fostered instinctive engagement with surroundings, is now compressed and hurried, leaving little space for meaningful connections. These shifts reveal the growing disconnection between people and the city.</p>
-
-            <img src="data/Oblivion-Montage.png" alt="The ways our bodies move during commutes reflect habits shaped by technology, limiting physical engagement with the city." class="section-image">
-
-            <p>Location and activity, however, offer pathways to reclaim this lost engagement. Location holds the power to shape interactions, encouraging discovery and connection, while activity remains a deeply personal factor that transforms commutes into unique journeys. Whether planned, spontaneous, or city-driven, activities allow individuals to build relationships with their surroundings, turning mundane routines into opportunities for exploration. Together, these factors present the potential to reconnect individuals with urban environments, transforming disconnected commutes into meaningful urban experiences.</p>
-        </section>
-
-        <section class="odyssey">
-            <h2>Odyssey</h2>
-            <p class="subtitle">a long and eventful or adventurours journey or experience</p>
-
-            <p>A speculative journey designed for those who want more than a commute, it is for people seeking to connect, engage, interact, and rediscover the city, transforming commutes into engaging, discovery-filled journeys and turning the city into an interactive playground.</p>
-
-            <img src="data/Odyssey step giff.gif" alt="ODYSSEY - a long and eventful or adventurours journey or experience" class="section-image">
-
-            <p>Odyssey offers a counterpoint to Oblivion — a reframing of the commute as a meaningful journey. It emphasizes awareness, engagement, and discovery, challenging the assumption that everyday urban routines must be monotonous or unconscious. Instead, Odyssey proposes that even the most ordinary routes can become spaces for reflection, exploration, and interaction with the city.</p>
-
-            <img src="data/Odyssey-Montage.png" alt="ODYSSEY fosters curiosity and interactivity, breaking the monotony of commutes and reconnecting people with their city." class="section-image">
-
-            <p>The idea of Odyssey emerged from a simple yet pressing realization: that digital saturation is dulling our connection to the physical world. As we increasingly experience cities as blurred scenery behind a screen, the Odyssey state calls us to re-tune ourselves to the emotional, sensory, and cultural layers of our surroundings. This isn't a rejection of technology — it's a reorientation. Odyssey leverages technology not to distract, but to enhance presence.</p>
-
-            <img src="data/ciy calling.png" alt="The City Reaches Out - A call to reawaken your connection with place." class="section-image">
-
-            <p>At stake is the growing disconnection between people and place. Odyssey reimagines commutes not as empty transitions, but as opportunities for participatory discovery. It encourages users to become active agents in their environment — transforming passive routines into moments of curiosity, attention, and meaningful interaction with urban life.</p>
-        </section>
-
-        <section class="urban-experiences">
-            <h2>Urban Experiences as Mementos</h2>
-            <p class="subtitle">Deconstructing the Urban Experience — to Understand How It Forms, Functions, and Feels.</p>
-
-            <p>Urban experiences emerge from the dynamic relationship between people, the city, and the experiences that unfold in between. These entities do not exist in isolation — they are constantly activated through three core actions: intersection, interaction, and interplay.</p>
-
-            <img src="data/Urban-Experiences.png" alt="Where actions and entities converge to shape how we engage with the city." class="section-image">
-
-            <h3>The Actions: How We Engage</h3>
-            <ul>
-                <li>Intersection - occurs when people and places meet — in motion, in pause, in fleeting moments of presence.</li>
-                <li>Interaction - happens when the city responds to our actions and we respond back — visually, sensorially, socially.</li>
-                <li>Interplay - is the continuous, evolving dance between the environment and the individual — a layered exchange of meaning, attention, and response.</li>
-            </ul>
-
-            <p>Together, these actions shape the nature and quality of the urban experience. They determine whether we pass through the city blindly — or engage with it fully.</p>
-
-            <h3>The Entities: Who and What Create the Experience</h3>
-            <ul>
-                <li>People - bring mood, memory, routine, and perception.</li>
-                <li>The City - offers setting, stimuli, rhythm, and unpredictability.</li>
-                <li>Experiences - form in the space between — ephemeral, emotional, and deeply personal.</li>
-            </ul>
-
-            <p>When these entities connect through mindful action, a new kind of journey unfolds. The city becomes more than a backdrop; it becomes a collaborator.</p>
-
-            <img src="data/Data1.jpg" alt="Foundation of ODYSSEY:Archived experiments" class="section-image">
-
-            <p>This visual represents one of the early commute archives conducted as an experimental framework to collect real-world user data. Through a structured set of tasks — including path discovery, photo capture, object study, smell and sound mapping, journaling, and mood reflections — diverse inputs such as geolocations, images, sensory notes, and personal reflections were gathered.</p>
-
-            <p>This experiment was not just about documentation — it was about decoding how urban experiences unfold during commutes and how they can be meaningfully captured on a digital platform. The archive played a critical role in shaping MEMENTO's design: informing its structure, defining input types, guiding feature development, and mapping how user-generated data could translate into live, discoverable mementos. It also laid the groundwork for categories, visualizations, and interaction models that the platform now enables.</p>
-
-            <p>The research revealed that urban detachment doesn't stem from a lack of meaning — but from a lack of active engagement. By paying attention to where we are, what we do, and how we perceive, we begin to reclaim a sense of urban presence. Urban experiences are not just fleeting moments — they are powerful tools for transforming Oblivion into Odyssey, reminding us that every step through the city holds the potential for discovery.</p>
-        </section>
-
-        <section class="what-is-memento">
-            <h2>What is MEMENTO?</h2>
-            <p class="subtitle">Understanding the characteristics of MEMENTO the platform.</p>
-
-            <img src="data/memento for splash magenta.svg" alt="MEMENTO - the platform" class="section-image">
-
-            <p>MEMENTO reimagines how we engage with the city — not as passive commuters guided by algorithms, but as attentive explorers tuned into real-time urban experiences. The platform shifts our focus from screen-based distraction to place-based presence. It's not about checking in, scrolling through feeds, or arriving at a destination. It's about noticing what's unfolding around us — the sounds, sights, encounters, and emotions that make each journey unique.</p>
-
-            <p>While most digital platforms demand attention for virtual content, MEMENTO gives that attention back to the physical world. It doesn't reward perfection or popularity — it values presence. What other apps ignore or overlook, MEMENTO elevates: a street-side moment, a passing gesture, a fleeting vibe. This platform isn't built for likes or followers, but for those who want to feel the city, not just move through it.</p>
-
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <iframe src="https://www.youtube.com/embed/uFpafGzH7Ak" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen
-                            class="video-frame">
-                    </iframe>
-                </div>
+            <div class="json-scroll-list">
+                <h4>Tags <span style="font-size:0.9em; color:#888;">(memento_tags.json)</span></h4>
+                <ul>
+                    <li>🌀 Ephemeral <span class="json-id">(ephemeral)</span></li>
+                    <li>📍 Unmapped <span class="json-id">(unmapped)</span></li>
+                    <li>🧬 Niche/Cult <span class="json-id">(niche)</span></li>
+                    <li>💫 Emotionally Charged <span class="json-id">(emotional)</span></li>
+                    <li>🕵️ Hidden Gem <span class="json-id">(hidden)</span></li>
+                    <li>🎭 Unexpected Encounter <span class="json-id">(unexpected)</span></li>
+                    <li>🪞 Reflective <span class="json-id">(reflective)</span></li>
+                    <li>💔 Unpleasant Truth <span class="json-id">(unpleasant)</span></li>
+                    <li>⏳ Once-in-a-While <span class="json-id">(rare)</span></li>
+                    <li>🔄 Recurring Ritual <span class="json-id">(recurring)</span></li>
+                    <li>🧃 Local Flavor <span class="json-id">(local)</span></li>
+                    <li>💃 Performative <span class="json-id">(performative)</span></li>
+                    <li>👀 Blink and You Miss It <span class="json-id">(blink)</span></li>
+                    <li>🧲 Highly Social <span class="json-id">(social-heavy)</span></li>
+                    <li>🌃 Nightlife Pulse <span class="json-id">(nightlife)</span></li>
+                    <li>🧳 Touristy Yet Fun <span class="json-id">(touristy)</span></li>
+                    <li>🧼 Over-Polished <span class="json-id">(clean-cut)</span></li>
+                    <li>🐣 First-Time Friendly <span class="json-id">(beginner)</span></li>
+                    <li>🏙️ Iconic Landmark <span class="json-id">(iconic)</span></li>
+                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                </ul>
             </div>
+            <div class="json-scroll-list">
+                <h4>Durations <span style="font-size:0.9em; color:#888;">(memento_durations.json)</span></h4>
+                <ul>
+                    <li>⚡ 15 Minutes <span class="json-id">(15min)</span></li>
+                    <li>⏱️ 1 Hour <span class="json-id">(1hr)</span></li>
+                    <li>⌛ 1-3 Hours <span class="json-id">(1-3hrs)</span></li>
+                    <li>🌅 3-6 Hours <span class="json-id">(3-6hrs)</span></li>
+                    <li>🌞 6-12 Hours <span class="json-id">(6-12hrs)</span></li>
+                    <li>🌙 A Day <span class="json-id">(24hrs)</span></li>
+                    <li>📅 A Week <span class="json-id">(1-week)</span></li>
+                    <li>📆 A Month <span class="json-id">(1-month)</span></li>
+                    <li>🔄 A Season <span class="json-id">(1-season)</span></li>
+                    <li>📅 A Year <span class="json-id">(1-year)</span></li>
+                    <li>♾️ Eternal <span class="json-id">(eternal)</span></li>
+                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                </ul>
+            </div>
+        </div>
+        <h4>3. Firebase Integration</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def _initialize_firebase(self):
+    try:
+        cred = credentials.Certificate(self.firebase_credentials_path)
+        firebase_admin.initialize_app(cred)
+        self.db = firestore.client()
+        logging.info("Firebase initialized successfully")
+    except Exception as e:
+        logging.error(f"Failed to initialize Firebase: {e}")
 
-            <h3>What MEMENTO Is (and Isn't)</h3>
-            <ul>
-                <li>Not another navigation app — but a platform to re-navigate how we notice the city.</li>
-                <li>Not just a place to document what's seen — but to create your own urban moments as mementos.</li>
-                <li>Not an app to show destinations — but one that celebrates the journey itself.</li>
-                <li>Not designed for screen time — but made for city time.</li>
-                <li>Not about permanence or perfection — but about capturing what's fleeting, raw, and real.</li>
-                <li>Not another tool to scroll through — but one that invites you to walk through.</li>
-                <li>Not a social app for likes — but a quiet space to reflect, feel, and connect.</li>
-                <li>Not another place to record for later — but to notice what's happening right now.</li>
-                <li>Not a map of what's already known — but a living canvas of urban experiences unfolding in real time.</li>
-                <li>Not what other platforms consider 'valuable' — but everything they overlook.</li>
-                <li>Not another city app for efficiency — but a gentle reminder to look, slow down, and feel.</li>
-                <li>Not built to distract you — but to anchor you to the here and now.</li>
+def load_from_firebase(self, limit=1000):
+    try:
+        logging.info(f"Loading up to {limit} mementos from Firebase")
+        mementos_ref = self.db.collection("mementos").limit(limit)
+        mementos = mementos_ref.get()
+        
+        memento_list = []
+        for doc in mementos:
+            memento_data = doc.to_dict()
+            memento_data['id'] = doc.id
+            memento_list.append(memento_data)
+        
+        return pd.DataFrame(memento_list)
+    except Exception as e:
+        logging.error(f"Error loading mementos from Firebase: {str(e)}")
+        raise
+</code></pre>
+        <strong>Features:</strong>
+        <ul>
+            <li>Secure credential management</li>
+            <li>Error handling and logging</li>
+            <li>Connection state tracking</li>
+            <li>Data retrieval with limit</li>
             </ul>
+        <h4>4. Text Preprocessing</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def _preprocess_text(self, text: str) -> str:
+    if not isinstance(text, str):
+        text = str(text)
+    
+    # Convert to lowercase
+    text = text.lower()
+    
+    # Remove special characters and digits
+    text = re.sub(r'[^a-z\s]', ' ', text)
+    
+    # Remove extra whitespace
+    text = ' '.join(text.split())
+    
+    return text
+</code></pre>
+        <strong>Processing Steps:</strong>
+        <ol>
+            <li>Type conversion to string</li>
+            <li>Lowercase conversion</li>
+            <li>Special character removal</li>
+            <li>Whitespace normalization</li>
+        </ol>
+        <h4>5. Feature Extraction</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def _extract_text_for_ml(self, memento: Dict) -> str:
+    text_parts = []
+    
+    # Add name with higher weight (repeat 3 times)
+    name = memento.get('name', '')
+    text_parts.extend([name] * 3)
+    
+    # Add description
+    description = memento.get('description', '')
+    text_parts.append(description)
+    
+    # Add location name if available
+    location = memento.get('location', {})
+    if isinstance(location, dict):
+        location_str = str(location)
+        text_parts.append(location_str)
+    
+    # Join all parts and preprocess
+    combined_text = ' '.join(filter(None, text_parts))
+    return self._preprocess_text(combined_text)
+</code></pre>
+        <strong>Feature Components:</strong>
+        <ol>
+            <li>Name (weighted 3x)</li>
+            <li>Description</li>
+            <li>Location information</li>
+        </ol>
+        <h4>6. Training Data Preparation</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def prepare_training_data(self, df: pd.DataFrame, output_dir: str) -> Dict[str, str]:
+    logging.info("Preparing data for training...")
+    os.makedirs(output_dir, exist_ok=True)
+    
+    processed_data = []
+    for _, memento in df.iterrows():
+        memento_dict = memento.to_dict()
+        text_for_ml = self._extract_text_for_ml(memento_dict)
+        memento_dict['text_for_ml'] = text_for_ml
+        processed_data.append(memento_dict)
+    
+    processed_df = pd.DataFrame(processed_data)
+    output_path = os.path.join(output_dir, "user_mementos_processed.csv")
+    processed_df.to_csv(output_path, index=False)
+    
+    return {"processed_data": output_path}
+</code></pre>
+        <strong>Process Flow:</strong>
+        <ol>
+            <li>Create output directory</li>
+            <li>Process each memento</li>
+            <li>Extract ML features</li>
+            <li>Save processed data</li>
+        </ol>
+        <h4>7. Main Execution Flow</h4>
+        <strong>Code:</strong>
+        <pre><code class="language-python">def main():
+    # Initialize data loader with paths
+    loader = MementoDataLoader(
+        categories_path="memento_categories.json",
+        tags_path="memento_tags.json",
+        durations_path="memento_durations.json",
+        firebase_credentials_path="config/serviceAccountKey.json"
+    )
+    
+    # Create output directory
+    output_dir = "ml_pipeline/output/step1_data_processing/processed_data"
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Load user mementos from Firebase
+    logging.info("Loading user mementos from Firebase...")
+    user_mementos = loader.load_from_firebase(limit=1000)
+    
+    if user_mementos.empty:
+        logging.error("No user mementos found in Firebase")
+        return
+    
+    logging.info(f"Loaded {len(user_mementos)} user mementos from Firebase")
+    
+    # Process the data
+    processed_data = loader.prepare_training_data(user_mementos, output_dir)
+</code></pre>
+        <h3>Input/Output Files</h3>
+        <h4>Input Files:</h4>
+        <ol>
+            <li><code>memento_categories.json</code></li>
+            <li><code>memento_tags.json</code></li>
+            <li><code>memento_durations.json</code></li>
+            <li><code>config/serviceAccountKey.json</code></li>
+        </ol>
+        <h4>Output Files:</h4>
+        <ul>
+            <li><code>ml_pipeline/output/step1_data_processing/processed_data/user_mementos_processed.csv</code></li>
+        </ul>
+        <h3>Data Flow</h3>
+        <ol>
+            <li>Load metadata files</li>
+            <li>Initialize Firebase connection</li>
+            <li>Load user mementos</li>
+            <li>Process and transform data</li>
+            <li>Save processed data</li>
+        </ol>
+        <h3>Error Handling</h3>
+        <ul>
+            <li>File operations</li>
+            <li>Firebase connection</li>
+            <li>Data processing</li>
+            <li>Type conversion</li>
+            <li>Empty data checks</li>
+        </ul>
+        <h3>Logging</h3>
+        <ul>
+            <li>INFO: General progress</li>
+            <li>ERROR: Processing failures</li>
+            <li>WARNING: Data issues</li>
+            <li>DEBUG: Detailed processing</li>
+        </ul>
+        <h3>Dependencies</h3>
+        <ul>
+            <li>pandas: Data manipulation</li>
+            <li>firebase_admin: Firebase integration</li>
+            <li>nltk: Text processing</li>
+            <li>sklearn: Data preprocessing</li>
+            <li>logging: System logging</li>
+            <li>json: JSON file handling</li>
+            <li>os: Directory operations</li>
+        </ul>
         </section>
-
-        <section class="conclusion">
-            <h2>End? Or the real Beginning!</h2>
-            <p>This isn't the conclusion of a project —<br>
-            it's the start of a movement.<br>
-            A shift in how we move through our cities,<br>
-            how we notice, reflect, and reconnect.</p>
-
-            <p>Cities don't lack stories.<br>
-            We've simply stopped paying attention.</p>
-
-            <p>MEMENTO is a gentle reminder:<br>
-            to look closer, feel deeper, and share what usually goes unnoticed.<br>
-            It's not a tool. It's a mindset.<br>
-            Not just a platform, but a call to presence.</p>
-
-            <p>Thank you for being part of this journey —<br>
-            from the quiet blur of Oblivion…<br>
-            to the rich discovery of an Odyssey yet unfolding.</p>
-        </section>
-
-        <section class="about">
-            <h2>Who's Behind MEMENTO?</h2>
-            <p><a href="https://0209vaibhav.github.io/Website/" target="_blank">Vaibhav Jain</a> - created and designed by<br>
-            <em>Computation | Spatial Data | Architecture</em><br>
-            <em>Designer | Storyteller</em></p>
-
-            <p><a href="https://0209vaibhav.github.io/Memento/" target="_blank">MEMENTO</a> is a culmination of my academic and creative journey through the <a href="https://www.arch.columbia.edu/programs/15-m-s-computational-design-practices" target="_blank">Computational Design Practices program at GSAPP in Columbia University</a>. Over three semesters of research, experimentation, and refinement, MEMENTO was shaped by critical feedback, collaborative learning, and speculative design thinking.</p>
-
-            <h3>Core Studios and professors That Anchored the Project</h3>
-            <p>Explore, Explain, Propose – <em>Laura Kurgan, Snoweria Zhang</em><br>
-            Design in Action – <em>Seth Thompson, Catherine Griffiths</em><br>
-            Capstone Project Advisor – <em>Juan Francisco Saldarriaga</em></p>
-
-            <h3>Special Thanks To</h3>
-            <p>My peers, mentors, and the entire CDP cohort for the countless conversations, provocations, and encouragement that fueled this work. Every discussion, critique, and shared idea contributed to the making of this platform.</p>
-        </section>
-    </main>
 
     <footer>
         <div class="references">
