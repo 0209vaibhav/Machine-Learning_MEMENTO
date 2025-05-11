@@ -107,8 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 container.innerHTML = `<pre><code>${JSON.stringify(data, null, 2)}</code></pre>`;
             })
             .catch(err => {
+                console.error(`Error loading JSON from ${url}:`, err);
                 const container = document.getElementById(containerId);
-                if (container) container.innerHTML = '<em>Could not load metadata.</em>';
+                if (container) container.innerHTML = '<em>Could not load data.</em>';
             });
     }
 

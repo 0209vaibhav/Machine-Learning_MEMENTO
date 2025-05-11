@@ -594,19 +594,63 @@ python ml_pipeline/tests/test_setup.py</code></pre>
                     <li>
                         Categories metadata (JSON file)
                         <div class="scrollable-json" id="categories-json-preview">
-                            <em>Loading categories metadata...</em>
+                            <pre><code>[
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "symbol": "🏛️",
+    "keywords": ["building", "structure", "design", "architecture", "landmark", "historic", "monument", "architectural"]
+  },
+  {
+    "id": "urban-nature",
+    "name": "Urban Nature",
+    "symbol": "🌿",
+    "keywords": ["park", "garden", "nature", "green space", "plants", "trees", "urban nature", "outdoor"]
+  },
+  // ... more categories ...
+]</code></pre>
                         </div>
                     </li>
                     <li>
                         Tags metadata (JSON file)
                         <div class="scrollable-json" id="tags-json-preview">
-                            <em>Loading tags metadata...</em>
+                            <pre><code>[
+  {
+    "id": "ephemeral",
+    "name": "Ephemeral",
+    "symbol": "🌀",
+    "keywords": ["temporary", "fleeting", "short-lived", "momentary", "brief", "passing", "transient", "ephemeral"]
+  },
+  {
+    "id": "unmapped",
+    "name": "Unmapped",
+    "symbol": "📍",
+    "keywords": ["hidden", "undiscovered", "secret", "unknown", "unexplored", "off-map", "unmapped", "new"]
+  },
+  // ... more tags ...
+]</code></pre>
                         </div>
                     </li>
                     <li>
                         Durations metadata (JSON file)
                         <div class="scrollable-json" id="durations-json-preview">
-                    </div>
+                            <pre><code>[
+  {
+    "id": "15min",
+    "name": "15 Minutes",
+    "symbol": "⚡",
+    "keywords": ["15 minutes", "quarter hour", "quick stop", "brief moment", "passing", "fleeting"]
+  },
+  {
+    "id": "1hr",
+    "name": "1 Hour",
+    "symbol": "⏱️",
+    "keywords": ["1 hour", "one hour", "hour long", "60 minutes", "quick visit"]
+  },
+  // ... more durations ...
+]</code></pre>
+                        </div>
+                    </li>
                 </div>
             </div>
 
@@ -790,128 +834,19 @@ class MementoDataLoader:
                 <h4>Outputs</h4>
                 <p>The step produces the following outputs:</p>
                 <div class="code-example">
-                    <h5>1. Model Information (model_info.json)</h5>
-                    <div class="scrollable-json">
-                        <pre><code>{
-  "timestamp": "2025-05-09T19:12:32.242803",
-  "vectorizer": {
-    "max_features": 5000,
-    "ngram_range": "(1, 2)",
-    "vocabulary_size": 3
-  },
-  "category_model": {
-    "type": "RandomForestClassifier",
-    "params": {
-      "n_estimators": 200,
-      "max_depth": 10,
-      "random_state": 42,
-      "criterion": "gini",
-      "max_features": "sqrt"
-    }
-  },
-  "tags_model": {
-    "type": "OneVsRestClassifier",
-    "params": {
-      "estimator": "RandomForestClassifier",
-      "max_depth": 10,
-      "n_estimators": 200,
-      "random_state": 42
-    }
-  },
-  "duration_model": {
-    "type": "RandomForestClassifier",
-    "params": {
-      "n_estimators": 200,
-      "max_depth": 10,
-      "random_state": 42
-    }
-  }
-}</code></pre>
-                    </div>
+                    <ul class="output-list">
+                        <li>1. Model Information (model_info.json)
+                            <div class="scrollable-json" id="step2-model-info-preview">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </li>
 
-                    <h5>2. Model Metrics (model_metrics.json)</h5>
-                    <div class="scrollable-json">
-                        <pre><code>{
-  "category": {
-    "accuracy": 0.0,
-    "report": {
-      "cultural": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 1.0
-      },
-      "experimental": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 0.0
-      },
-      "mood-music": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 1.0
-      },
-      "public-event": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 1.0
-      },
-      "urban-nature": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 0.0
-      }
-    }
-  },
-  "tags": {
-    "f1_micro": 0.14285714285714285,
-    "f1_macro": 0.038461538461538464
-  },
-  "duration": {
-    "accuracy": 0.0,
-    "report": {
-      "1-2hrs": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 3.0
-      },
-      "12-24hrs": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 0.0
-      },
-      "15min-1hr": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 0.0
-      },
-      "6-12hrs": {
-        "precision": 0.0,
-        "recall": 0.0,
-        "f1-score": 0.0,
-        "support": 0.0
-      }
-    }
-  }
-}</code></pre>
-                    </div>
-
-                    <h5>3. Generated Model Files</h5>
-                    <div class="model-files">
-                        <ul>
-                            <li>📄 vectorizer.pkl (895B)</li>
-                            <li>📄 category_model.pkl (222KB)</li>
-                            <li>📄 tags_model.pkl (1.4MB)</li>
-                            <li>📄 duration_model.pkl (218KB)</li>
-                        </ul>
-                    </div>
+                        <li>2. Model Metrics (model_metrics.json)
+                            <div class="scrollable-json" id="step2-metrics-preview">
+                                <!-- Will be populated by JavaScript -->
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -1962,42 +1897,42 @@ def update_scraper(scraper_path: str, dryrun: bool = False) -> bool:
         <p class="category-description">Each card below represents a dataset of public mementos, grouped by theme. These are the actual lists used to populate the public mementos map and features in the MEMENTO web-app.</p>
         <div class="category-grid">
             <div class="category-card" id="culture-card">
-                <h4>Culture (<span id="culture-count">Loading...</span>)</h4>
+                <h4>🎭 Culture (<span id="culture-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="culture-preview">
                     <em>Loading culture mementos...</em>
                 </div>
             </div>
 
             <div class="category-card" id="escapes-card">
-                <h4>Escapes (<span id="escapes-count">Loading...</span>)</h4>
+                <h4>🏃 Escapes (<span id="escapes-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="escapes-preview">
                     <em>Loading escapes mementos...</em>
                 </div>
             </div>
 
             <div class="category-card" id="food-drink-card">
-                <h4>Food & Drink (<span id="food-drink-count">Loading...</span>)</h4>
+                <h4>🍽️ Food & Drink (<span id="food-drink-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="food-drink-preview">
                     <em>Loading food & drink mementos...</em>
                 </div>
             </div>
 
             <div class="category-card" id="things-to-do-card">
-                <h4>Things to Do (<span id="things-to-do-count">Loading...</span>)</h4>
+                <h4>🎯 Things to Do (<span id="things-to-do-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="things-to-do-preview">
                     <em>Loading things to do mementos...</em>
                 </div>
             </div>
 
             <div class="category-card" id="top-news-card">
-                <h4>Top News (<span id="top-news-count">Loading...</span>)</h4>
+                <h4>📰 Top News (<span id="top-news-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="top-news-preview">
                     <em>Loading top news mementos...</em>
                 </div>
             </div>
 
             <div class="category-card" id="wellness-nature-card">
-                <h4>Wellness & Nature (<span id="wellness-nature-count">Loading...</span>)</h4>
+                <h4>🌿 Wellness & Nature (<span id="wellness-nature-count">Loading...</span>)</h4>
                 <div class="scrollable-json" id="wellness-nature-preview">
                     <em>Loading wellness & nature mementos...</em>
                 </div>
