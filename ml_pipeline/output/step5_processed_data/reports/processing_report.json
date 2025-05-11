@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-05-09T23:16:29.336749",
+  "total_mementos": 14,
+  "successful_processing": 14,
+  "failed_processing": 0,
+  "success_rate": 1.0,
+  "category_distribution": {
+    "poetic": 8,
+    "public-event": 5,
+    "urban-nature": 1
+  },
+  "duration_distribution": {
+    "15min-1hr": 12,
+    "12-24hrs": 1,
+    "6-12hrs": 1
+  },
+  "average_confidence": {
+    "category": 0.18572024596094214,
+    "tags": 0.5110839658953786,
+    "duration": 0.19524059745729508
+  }
+}

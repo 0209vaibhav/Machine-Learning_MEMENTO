@@ -1,0 +1,730 @@
+[
+  {
+    "userId":"Source \/ Edwina Hay",
+    "location":{
+
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/08121029\/BRIC-Celebrate-Brooklyn-1024x683.jpg"
+    ],
+    "name":"Free Summer Concerts Return To Prospect Park With BRIC Celebrate Brooklyn!",
+    "description":"As NYC dwellers we all make jokes about how it costs $200 just to step outside our apartment, but once the weather starts to warm up it\u2019s hard to stay cooped up indoors. And now that summer is approaching\u2013oh, and it\u2019s going to be ahotter and rainier one than usualat that\u2013we\u2019ll find every excuse we can to be outdoors (on the sunny days, of course! ). Thankfully, there\u2019s tons offree programmingheading to NYC so we can enjoy our time al fresco while still being able to afford abagelfor breakfast the next morning, andBRIC Celebrate Brooklyn! is joining in on the fun.",
+    "category":"Other",
+    "timestamp":"May 08, 2025 at 05:34 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/bric-celebrate-brooklyn-2025\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"urban-nature",
+    "category_confidence":0.1990678249,
+    "predicted_tags":[
+      "reflective"
+    ],
+    "tags_confidence":0.5301551365,
+    "predicted_duration":"12-24hrs",
+    "duration_confidence":0.1986545643,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.20 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Michael Bodycomb & Joe Coscia",
+    "location":{
+      "latitude":40.7360717,
+      "longitude":-73.9901888
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2024\/02\/03162856\/01_Magnolias_2015_2000-1-_433EA731-5056-A36F-236AB06468B09052-433ea0f95056a36_433ec0dc-5056-a36f-236aad466bcde086-1024x683.jpeg"
+    ],
+    "name":"30 Best Things To Do In NYC This Spring: The Ultimate Bucket List",
+    "description":"Sure, sometimes it seems uncertain that the warmth will ever stick around long enough to properly enjoy it, but considering it\u2019s almost spring and the sun has been shining quite a lot, it\u2019s safe to say winter is almost behind us. Which is to say, it\u2019s time to do some exploring! If you\u2019re looking for plans during this magical time of year, here\u2019s a list ofthe best things to see and do in NYC this spring! You can spend a beautiful day walking around NYC taking totally Instagrammable pictures with the pink and white blooms. Althoughpredictions are pointing towards a later mid-April bloom, we can still expect a city of full beautiful colors this spring.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 11:03 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/best-things-to-do-in-spring-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1753768261,
+    "predicted_tags":[
+      "reflective"
+    ],
+    "tags_confidence":0.5064601496,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1943255319,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ The Great Nosh",
+    "location":{
+      "latitude":40.7607445,
+      "longitude":-73.9224809
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/08154259\/tgn3-1024x677.jpg"
+    ],
+    "name":"A New Jewish Food Festival Is Debuting On Governors Island \u2014 Including Chef Collabs, Cooking Demos & More",
+    "description":"Foodies, rejoice. A brand new food festival is entering the villa. The Great Nosh picnicis set todebut on Governors Islandthis summer, promising a \u201cnew kind of Jewish food and culture festival. \u201d The festival is being presented byThe Jewish Food SocietyonJune 22, 2025, and is set to bring together people of all backgrounds toenjoy art, live music, engaging cooking demos, and one-of-a-kind dish collaborations from thoughtfully paired chefs and restaurants. \u201cThe Great Nosh is about joy, culture, and celebrating our city,\u201d saidNaama Shefi, founder of the Jewish Food Society and visionary behind The Great Nosh.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 02:17 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/the-great-nosh-picnic-festival-2025\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1787325951,
+    "predicted_tags":[
+      "emotional"
+    ],
+    "tags_confidence":0.5001266912,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1960676205,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Shutterstock \/ Mapan",
+    "location":{
+      "latitude":40.691887,
+      "longitude":-73.9105203
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2020\/02\/19052131\/Brooklyn-Bridge-at-sunset-1024x683.jpg"
+    ],
+    "name":"The Best Free Things To Do In NYC Right Now",
+    "description":"There\u2019s no arguing that NYC is on the pricer side, but trust us when we tell you there are plenty of coolfree things to do in NYCthat are worthy of your attention. Whether it\u2019s exploringnew exhibitson free museum admission days, having a look atoutdoor installations, or joiningreading clubsat your localNew York Public Librarybranch, offerings abound. Sure, these perks might not be so easy to uncover, but that\u2019s why we\u2019re here. We\u2019ve got your back! What catches your eye on our list of free things to do in NYC?",
+    "category":"Other",
+    "timestamp":"May 02, 2025 at 08:33 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/free-things-to-do-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1787325951,
+    "predicted_tags":[
+      "emotional"
+    ],
+    "tags_confidence":0.5001266912,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1960676205,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Courtesy: Unsplash\/Florian Wehde",
+    "location":{
+      "latitude":40.7113675,
+      "longitude":-74.0132704
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2022\/03\/12125236\/florian-wehde-V4cHacmEnW8-unsplash-1024x683.jpg"
+    ],
+    "name":"55 Amazing Things To Do In NYC This Weekend: May 9 \u2013 11",
+    "description":"Searching for thebest things to do this weekend in NYC? We have you covered. Saturdays and Sundays are precious real estate, and you wouldn\u2019t want to waste your time with subpar events. Fortunately for you, we found the coolest and most exciting activities the city has to offer, from seasonal happenings and cool shows to delicious new bites and can\u2019t-miss exhibits. Start off with somebrunch, peruse our recs, and then head out on your merry way.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 08:11 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/what-to-do-this-weekend-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"public-event",
+    "category_confidence":0.1791969335,
+    "predicted_tags":[
+      "ephemeral"
+    ],
+    "tags_confidence":0.515113356,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.2009971469,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Instagram \/ @islandoyster",
+    "location":{
+      "latitude":40.7224756,
+      "longitude":-73.9829662
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2021\/05\/19164305\/New-Project-2-1-1024x683.jpg"
+    ],
+    "name":"43 Marvelous Things To Do In NYC In May 2025",
+    "description":"As a new season approaches, NYC\u2019s energy will soon be shifting intosummermode. But before we get there, let\u2019s not forget thatMay is totally jam-packed with fun things to look forward to. That said, we\u2019ve put together a giant list below of all themust-do activities happening this monthin the city. Let\u2019s get into it: Cinco de Mayo(Monday, May 5th)commemorates Mexico\u2019s victory against France in the 1862 Battle of Puebla, and the city\u2019s Cinco de Mayo happenings are a way for Mexican-Americans to celebrate their cultural heritage and show off their pride. Find some of thebest ways to celebrate the holiday in NYC.",
+    "category":"Other",
+    "timestamp":"April 29, 2024 at 03:09 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/things-to-do-may-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"public-event",
+    "category_confidence":0.1821881524,
+    "predicted_tags":[
+      "ephemeral"
+    ],
+    "tags_confidence":0.50462006,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1946081939,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Uptown Night Market",
+    "location":{
+
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/08102231\/Uptown-Night-Market-1024x683.jpg"
+    ],
+    "name":"Uptown Night Market Returns To Harlem Tonight With 50+ Diverse Vendors",
+    "description":"NYC\u2019s most popular and Manhattan\u2019s largest food festival, Uptown Night Market, is making its long-awaitedreturn to Harlem for its fifth season tonight, Thursday, May 8th. And whether you\u2019re a committed NYC foodie or just looking for a place to surround yourself with good company, it\u2019s certainly the place you\u2019ll want to be. Uptown Night Market is a vibrant celebration meant to amplify the vibrancy of Harlem\u2019s rich culinary scene, community spirit, and cultural diversity, as well as support its small businesses, artisans, and entrepreneurs. Every Thursday night from May through October, over 50 diverse vendors and more than 15,000 guestsmake their way to the famous Harlem Arches on 12th Ave. and 133rd Street to get a taste of the best offerings from Harlem\u2019s rich African-American, African, Caribbean, Hispanic, and European culture.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 11:03 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/uptown-night-market-nyc-2025\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"public-event",
+    "category_confidence":0.2040894885,
+    "predicted_tags":[
+      "ephemeral",
+      "local",
+      "social-heavy",
+      "touristy",
+      "unexpected"
+    ],
+    "tags_confidence":0.5349277861,
+    "predicted_duration":"6-12hrs",
+    "duration_confidence":0.1994788475,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.20 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ New York Aquarium",
+    "location":{
+      "latitude":40.5748148,
+      "longitude":-74.0061167
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2024\/06\/11152748\/new-york-aquarium-1024x683.jpeg"
+    ],
+    "name":"30 Best Things To Do With Kids In NYC",
+    "description":"Even the littlest New Yorkers want to take a bite out of the Big Apple \u2014 that\u2019s where our list of things to do with kids in NYC comes in. We scoped out the city from a youngster\u2019s vantage point \u2014 from funinteractive exhibitstoplaces to eat\u2014 and we discovered a bunch of great experiences the whole family will love. Trust us, even the pickiest of kiddos will find something up their alley. Before you peruse our guide and embark on a day out with your crew, we have one bit of advice: wear comfortable shoes. You\u2019re gonna need \u2018em.",
+    "category":"Other",
+    "timestamp":"May 07, 2025 at 09:34 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/best-things-to-do-in-nyc-kids\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1787325951,
+    "predicted_tags":[
+      "emotional"
+    ],
+    "tags_confidence":0.5001266912,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1960676205,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Secret NYC",
+    "location":{
+      "latitude":40.6526006,
+      "longitude":-73.9497211
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2024\/11\/07111422\/6_v1ztzs-1024x683.jpg"
+    ],
+    "name":"Become A Juror For A Day At This Live Theater Courtroom Drama In NYC",
+    "description":"\ud83d\uddfd Set in the heart of NYC,The Jury Experiencetransforms you from observer to juror, immersing you in the pulse of alive courtroom drama. \u2696\ufe0f Each 60-minute session unfolds withemotionally-charged performances, placing you at the center of unpredictable legal twists and moral dilemmas. \ud83e\udd14 The experience invites you toanalyze evidenceanddissect witness testimonies, encouraging thoughtful introspection. \ud83c\udf00 Just as you think you\u2019ve reached a verdict, the defense introducessurprisesthat challenge your assumptions and keep the outcome uncertain. \ud83c\udfdb\ufe0f Hosted atIrondalein Brooklyn, a historic and socially conscious theater space known for its innovative productions and deep community roots.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 02:14 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/jury-experience-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1874102512,
+    "predicted_tags":[
+      "unpleasant"
+    ],
+    "tags_confidence":0.5245678766,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1990236504,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.19 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Red Velvet Burlesque",
+    "location":{
+
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/07094620\/1200-x-800-Header-BrandedSponsored-5-1024x683.jpg"
+    ],
+    "name":"Embark On A Night Of Glamour And Seduction At NYC\u2019s Red Velvet Burlesque Cabaret Show",
+    "description":"Red Velvet Burlesque Showbrings glamour and sensuality to the Big Apple. The show, taking place Wednesday \u2013 Sunday, presents a dazzling production wherecabaret meets modern sensuality. Adorned in sparkling costumes, show-stopping acts will leave you breathless under the velvet lights. Red Velvet Burlesque Show presentsa new show every week, with bold choreography that will get your head spinning. The dancers interact with the audience all night long, offering aperfect blend of sexiness, glamour and fun.",
+    "category":"Other",
+    "timestamp":"May 08, 2025 at 03:45 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/red-velvet-burlesque\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1787325951,
+    "predicted_tags":[
+      "emotional"
+    ],
+    "tags_confidence":0.5001266912,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1960676205,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.20 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Unsplash \/ Yoav Aziz",
+    "location":{
+
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/09145815\/Chinatown-Manhattan-1-1024x683.jpg"
+    ],
+    "name":"$13 Entr\u00e9es, 18 Spots: Chinatown Restaurant Week Serves Up Off-Menu Specials & Tasty Deals",
+    "description":"With how overwhelming NYC\u2019s culinary scene is\u2013in a good way, of course! \u2013we open a restaurant week with open arms. Like, the chance to try some of NYC\u2019s top restaurants at rates? That\u2019s certainly right up our alley. Especially since the price ofeverythingkeeps rising due to inflation, and we\u2019re not sure how much thosestimulus checkswill really help us\u2026 And if dumplings, Tteokbokki, and B\u00fan b\u00f2 Hu\u1ebf make your mouth water, this new upcoming restaurant week will certainly pique your interest\u2026 Welcome to Chinatown, the Chinatown-based non-profit who\u2019s behind fun NYC events such asChinatown Night Market, is hostingChinatown Restaurant Week this May!",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 11:04 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/chinatown-restaurant-week-2025\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"public-event",
+    "category_confidence":0.1922641476,
+    "predicted_tags":[
+      "ephemeral",
+      "unexpected"
+    ],
+    "tags_confidence":0.5081055179,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1884600804,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.19 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Watch the Skies",
+    "location":{
+      "latitude":40.7110302,
+      "longitude":-73.8553034
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/05\/09113607\/3.-WATCH-THE-SKIES-1024x683.jpg"
+    ],
+    "name":"This Swedish Sci-Fi Movie Just Made History With AI \u2013 And It\u2019s In Theaters Now",
+    "description":"Evoking the nostalgia of classics likeE. T. andClose Encounters of the Third Kind,Sweden\u2019sWatch the Skieshas officially debuted in U. S. theaters.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 03:37 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/watch-the-skies-film\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1953453384,
+    "predicted_tags":[
+      "unpleasant"
+    ],
+    "tags_confidence":0.516379553,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1897383202,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.20 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.20 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Photo: f11photo via Shutterstock",
+    "location":{
+
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2023\/12\/14111031\/1-1-3-1024x683.jpg"
+    ],
+    "name":"Join Our Exclusive Secret Club To Enjoy Brilliant Perks And Benefits Across NYC",
+    "description":"Our Secret Club is no longer a secret\u2013it\u2019s a thriving community that\u2019sthe perfect way to unlock the NYC\u2019s most exciting experiences. This must-trysubscriptionprovides unbeatable deals and discounts, giveaways, as well as acommunity-driven spacefor spreading that New York love, guaranteed tomake you feel like atrue NYC VIP. So,sign up nowtoaccess these brilliant benefits and this brand-new online community, or keep on reading for more information. Secret Club NYC is ourpremium subscription membershipon the Circle community platform, which adds an extra layer to the Secret NYC experience. Thanks to our friends atFever, as well as our close-knit relationships with local businesses, we\u2019ll be providing a plethora of perks to thank you for all your unwavering support.",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 03:42 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/secret-club-nyc\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"public-event",
+    "category_confidence":0.1886228933,
+    "predicted_tags":[
+      "ephemeral"
+    ],
+    "tags_confidence":0.514315996,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1921521434,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.19 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  },
+  {
+    "userId":"Source \/ Photo Credit: Anne Tan-Detchkov",
+    "location":{
+      "latitude":40.7127281,
+      "longitude":-74.0060152
+    },
+    "media":[
+      "https:\/\/offloadmedia.feverup.com\/secretnyc.co\/wp-content\/uploads\/2025\/03\/18105640\/2023.04.22-Climate-Arts-Festival_CREDIT-Anne-Tan-Detchkov-55-1024x768.jpg"
+    ],
+    "name":"Spring Has Sprung At Queens Botanical Garden With These Fun May Activities",
+    "description":"When the sun\u2019s out, fun\u2019s out and Queens Botanical Garden has so many fun things happening all Spring long, sosecure your spot here! Whether it\u2019s doing some bird watching, painting in the garden or just celebrating and helping the environment, there\u2019s something for everyone. Located at43-50 Main St. in Flushing, in one of the most cultural neighborhoods in NYCis reason enough to take a trip! On Mother\u2019s Day weekend there\u2019s lots to do!",
+    "category":"Other",
+    "timestamp":"May 09, 2025 at 04:06 PM",
+    "tags":[
+      "Other"
+    ],
+    "link":"https:\/\/secretnyc.co\/queens-botanical-garden-events\/",
+    "mementoType":"public",
+    "duration":"1h",
+    "predicted_category":"poetic",
+    "category_confidence":0.1815912074,
+    "predicted_tags":[
+      "reflective"
+    ],
+    "tags_confidence":0.5000233262,
+    "predicted_duration":"15min-1hr",
+    "duration_confidence":0.1916594033,
+    "validation_results":{
+      "is_valid":false,
+      "validation_details":{
+        "category":{
+          "valid":false,
+          "reason":"Low confidence: 0.18 < 0.4"
+        },
+        "tags":{
+          "valid":true,
+          "reason":"Valid prediction"
+        },
+        "duration":{
+          "valid":false,
+          "reason":"Low confidence: 0.19 < 0.4"
+        }
+      },
+      "reasons":[
+        "Low confidence: 0.18 < 0.4",
+        "Valid prediction",
+        "Low confidence: 0.19 < 0.4"
+      ]
+    },
+    "processing_status":"success",
+    "mementoTags":""
+  }
+]
