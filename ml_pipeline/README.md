@@ -114,4 +114,4 @@ ml_pipeline/
 - User mementos from Firebase are used as training data
 - Scraped data from Secret NYC is used for testing/classification
 - Models are trained on real user data to ensure quality predictions
-- Integration with the main system happens in step 7
+- Integration with the main system happens in step 7 

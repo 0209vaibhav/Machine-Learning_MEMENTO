@@ -191,58 +191,146 @@ header {
 /* Section styles */
 section {
     margin-bottom: 60px;
+    background: #fff;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+section h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #535151;
 }
 
-.subtitle {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 20px;
+section h3 {
+    font-size: 1.8em;
+    margin: 30px 0 20px;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
+
+section h4 {
+    font-size: 1.4em;
+    margin: 25px 0 15px;
+    color: #444;
+    font-weight: 500;
+}
+
+section h5 {
+    font-size: 1.2em;
+    margin: 20px 0 12px;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Specific section styles */
+.overview-section h2,
+.introduction-section h2,
+.computation-section h2,
+.pipeline-section h2,
+.detailed-pipeline-section h2,
+.results-section h2,
+.final-video-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.overview-section h3,
+.introduction-section h3,
+.computation-section h3,
+.pipeline-section h3,
+.detailed-pipeline-section h3,
+.results-section h3,
+.final-video-section h3 {
+    font-size: 1.8em;
+    margin: 30px 0 20px;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 10px) 1;
+}
+
+.overview-section h4,
+.introduction-section h4,
+.computation-section h4,
+.pipeline-section h4,
+.detailed-pipeline-section h4,
+.results-section h4,
+.final-video-section h4 {
+    font-size: 1.4em;
+    margin: 25px 0 15px;
+    color: #444;
+    font-weight: 500;
+}
+
+.overview-section h5,
+.introduction-section h5,
+.computation-section h5,
+.pipeline-section h5,
+.detailed-pipeline-section h5,
+.results-section h5,
+.final-video-section h5 {
+    font-size: 1.2em;
+    margin: 20px 0 12px;
+    color: #555;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 /* Video container */
 .video-container {
-    margin: 40px 0;
-}
-
-.video-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    padding-top: 56.25%;
+    overflow: hidden;
+    margin: 30px 0;
 }
 
-.video-thumbnail {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    cursor: pointer;
-}
-
-.play-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80px;
-    height: 80px;
-    pointer-events: none;
-}
-
-.video-frame {
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: none;
-    display: none;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.final-video-section {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.final-video-section h3 {
+    text-align: center;
+    padding: 2rem 0;
+    margin: 0;
 }
 
 /* Poem styles */
@@ -313,8 +401,15 @@ footer {
 }
 
 .what-is-memento h3 {
-    margin: 30px 0 20px;
+    font-size: 1.6em;
+    margin: 35px 0 20px;
     color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
 
 .what-is-memento ul {
@@ -358,8 +453,15 @@ footer {
 }
 
 .about h3 {
-    margin: 30px 0 20px;
+    font-size: 1.6em;
+    margin: 35px 0 20px;
     color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
 
 .about p {
@@ -416,7 +518,6 @@ body {
     flex-direction: column;
     align-items: center;
     background: #fff;
-    border-radius: 12px;
     min-width: 280px;
     max-width: 320px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -479,7 +580,7 @@ body {
     background: #fff;
     padding: 12px 0;
     text-align: center;
-    margin-bottom: 18px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     gap: 60px;
@@ -519,13 +620,6 @@ body {
     }
 }
 
-
-.pipeline-section h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
-    color: #333;
-}
-
 .pipeline-section h3 {
     font-size: 1.6em;
     margin: 40px 0 20px;
@@ -543,6 +637,7 @@ body {
 .pipeline-section p {
     margin: 15px 0;
     line-height: 1.6;
+    color: #555;
 }
 
 .pipeline-section ul {
@@ -556,9 +651,9 @@ body {
     color: #666;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .pipeline-section {
-        padding: 15px;
+        padding: 20px;
     }
     
     .pipeline-section h2 {
@@ -571,6 +666,20 @@ body {
     
     .pipeline-section h4 {
         font-size: 1.1em;
+    }
+    
+    .pipeline-detail-row {
+        flex-direction: column;
+        gap: 18px;
+    }
+    
+    .pipeline-detail-column {
+        border-right: none !important;
+        border-bottom: 2px solid #f0f0f0;
+    }
+    
+    .pipeline-detail-column:last-child {
+        border-bottom: none;
     }
 }
 
@@ -715,19 +824,27 @@ body {
 }
 
 .step-details h3 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #222;
-    font-weight: 600;
-    border-bottom: none;
-    padding-bottom: 0;
+    font-size: 1.6em;
+    margin: 35px 0 20px;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
 
 .step-details h4 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     margin: 25px 0 15px;
-    color: #333;
+    color: #444;
     font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
 
 .step-details p {
@@ -870,24 +987,6 @@ body {
 
 section[id] {
     scroll-margin-top: 80px;
-}
-
-.detailed-pipeline-section {
-    background: #f7f9fb;
-    border-radius: 16px;
-    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
-    padding: 40px 32px 40px 32px;
-    margin: 60px 0;
-    border: 1px solid #e0e6ed;
-    max-width: 100%;
-}
-
-.detailed-pipeline-section h2 {
-    font-size: 2em;
-    margin-bottom: 18px;
-    color: #1a1a1a;
-    font-weight: 700;
-    letter-spacing: 0.5px;
 }
 
 .detailed-pipeline-section h3 {
@@ -1115,19 +1214,7 @@ section[id] {
     margin: 60px 0;
 }
 
-.computation-section h2 {
-    font-size: 2.2em;
-    margin-bottom: 30px;
-    color: #333;
-}
 
-.computation-section h3 {
-    font-size: 1.6em;
-    margin: 40px 0 20px;
-    color: #444;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 10px;
-}
 
 .computation-section h4 {
     font-size: 1.2em;
@@ -1135,11 +1222,6 @@ section[id] {
     color: #555;
 }
 
-.computation-section p {
-    margin: 15px 0;
-    line-height: 1.6;
-    color: #666;
-}
 
 .computation-section ul {
     margin: 15px 0 25px 20px;
@@ -1175,10 +1257,14 @@ section[id] {
 
 .computation-card h3 {
     font-size: 1.4em;
-    margin-bottom: 15px;
-    color: #333;
-    border-bottom: none;
-    padding-bottom: 0;
+    margin: 25px 0 15px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #535151 0, #535151 5px, transparent 5px, transparent 10px) 1;
 }
 
 .computation-card p {
@@ -1263,15 +1349,18 @@ section[id] {
     background: #f8f9fa;
     border-radius: 12px;
     padding: 30px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .framework-section h4 {
     font-size: 1.4em;
-    color: #333;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #e0e6ed;
+    margin: 0 0 15px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 10px) 1;
 }
 
 .framework-section p {
@@ -1378,23 +1467,9 @@ section[id] {
     margin-bottom: 0;
 }
 
-@media (max-width: 900px) {
-    .workflow-images {
-        gap: 20px;
-    }
-
-    .workflow-description {
-        padding: 20px;
-    }
-
-    .workflow-description p {
-        font-size: 0.95em;
-    }
-}
-
 .workflow-caption {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 0.8em;
+    color: hsl(0 0% 75% / 1);
     line-height: 1.6;
     margin: 15px auto 30px auto;
     font-style: italic;
@@ -1402,14 +1477,6 @@ section[id] {
     max-width: 900px;
     width: 100%;
     display: block;
-}
-
-@media (max-width: 900px) {
-    .workflow-caption {
-        font-size: 1em;
-        margin: 12px auto 25px auto;
-        padding: 0 15px;
-    }
 }
 
 .workflow-image-caption-group {
@@ -1425,4 +1492,259 @@ section[id] {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+}
+
+.workflow-steps-description h4 {
+    font-size: 1.4em;
+    margin: 25px 0 15px;
+    color: #444;
+    font-weight: 500;
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #535151;
+    border-style: dashed;
+    border-width: 0 0 2px 0;
+    border-image: repeating-linear-gradient(to right, #eee 0, #eee 5px, transparent 5px, transparent 10px) 1;
+}
+
+@media (max-width: 900px) {
+    .workflow-images {
+        gap: 20px;
+    }
+
+    .workflow-description {
+        padding: 20px;
+    }
+
+    .workflow-description p {
+        font-size: 0.95em;
+    }
+
+    .workflow-caption {
+        font-size: 1em;
+        margin: 12px auto 25px auto;
+        padding: 0 15px;
+    }
+}
+
+.metadata-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.metadata-section {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.metadata-section h5 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.scrollable-json {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+    white-space: pre;
+}
+
+.scrollable-json pre {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    overflow-x: auto;
+}
+
+.scrollable-json::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.scrollable-json::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.scrollable-json::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.scrollable-json::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.input-preview {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.input-item {
+}
+
+.input-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.input-header .bullet {
+    color: #0d47a1;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.input-header h5 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.input-item .scrollable-json {
+    max-height: 300px;
+    overflow-y: auto;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.input-item .scrollable-json pre {
+    margin: 0;
+    padding: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.input-item .scrollable-json::-webkit-scrollbar {
+    width: 8px;
+}
+
+.input-item .scrollable-json::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.input-item .scrollable-json::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.input-item .scrollable-json::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 768px) {
+    .input-preview {
+        gap: 1.5rem;
+    }
+    
+    .input-item {
+        padding: 1rem;
+    }
+    
+    .input-header h5 {
+        font-size: 1rem;
+    }
+    
+    .input-item .scrollable-json {
+        max-height: 250px;
+    }
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 60px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.category-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 0;
+    border: 1px solid #e9ecef;
+}
+
+.category-stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.stat {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.scrollable-json {
+    max-height: 300px;
+    overflow: auto;
+    background: #f8f9fa;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.scrollable-json pre {
+    margin: 0;
+    white-space: pre;
+}
+
+.category-description {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .category-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1rem;
+  }
+  .category-card {
+    min-width: 320px;
+    max-width: 90vw;
+    }
+}
+
+.ml-results-analysis ul,
+.ml-results-analysis ol {
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+    color: #444;
+}
+
+.ml-results-analysis li {
+    margin-bottom: 0.7em;
+    line-height: 1.6;
+}
+
+.ml-results-analysis strong {
+    color: #0d47a1;
+    font-weight: 600;
 }

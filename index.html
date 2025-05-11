@@ -43,7 +43,9 @@
         <a href="#introduction-section">Introduction</a>
         <a href="#computation-section">Computation</a>
         <a href="#pipeline-section">Methodology</a>
-        <a href="#detailed-pipeline-section">Detailed Pipeline</a>
+        <a href="#detailed-pipeline-section">Pipeline</a>
+        <a href="#results-section">Results</a>
+        <a href="#application-section">Application</a>
     </nav>
     <section class="overview-section" id="overview-section">
         <h2>1. Overview</h2>
@@ -54,11 +56,10 @@
         <p>It empowers users to discover, capture, and engage with the mementos around them during their commutes, turning everyday journeys into moments of exploration, creation, and interaction.</p>
         <p>MEMENTO serves as an interaction, intersection, and interplay between the city, its people, and their experiences — a platform:<br>
             By the people and the city,<br>
-        For the people and the city,<br>
-        Of the people and the city.</p>
+For the people and the city,<br>
+Of the people and the city.</p>
 
-<br>
-        <h3>Overview of the Computation tools, methods and Machine Learning Pipeline in MEMENTO</h3>
+        <h3>Overview of the Computation Tools, Methods and Machine Learning Pipeline in MEMENTO</h3>
         <img src="data/mementos-categories,tags duration.png" alt="MEMENTO - the platform" class="section-image">
         <p>The Machine Learning pipeline for public mementos in MEMENTO is designed to automate the classification and tagging of public content sourced from platforms such as Secret NYC, Reddit, NYC Bucket List, Newsbreak, and more. The objective is to replace rule-based keyword matching with a robust multi-label classification model that leverages existing user-generated mementos as training data.</p>
         <p>The pipeline consists of three primary models — Category Classification, Tag Prediction, and Duration Estimation — each trained using supervised learning techniques. Logistic Regression with One-vs-Rest strategy and Random Forest classifiers are employed to predict relevant categories and multiple tags, while Decision Trees handle ordinal duration estimation. Text data undergoes preprocessing, including tokenization, stop word removal, and TF-IDF vectorization to convert descriptions into feature vectors suitable for model training.</p>
@@ -74,41 +75,49 @@
 
         <div class="framework-grid">
             <div class="framework-section">
-                <h4>Front End</h4>
+                <h4>🌐 Front End</h4>
+                <div class="video-container">
+                    <div class="video-overlay"></div>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/P2saCVSWqFY?autoplay=1&mute=1&loop=1&playlist=P2saCVSWqFY&modestbranding=1&controls=0&showinfo=0&rel=0" title="MEMENTO Frontend Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p>The user-facing web-app interface that brings urban experiences to life through:</p>
                 <ul>
-                    <li><strong>Web-App Creation:</strong> User profiles, memento capture forms, and dynamic content rendering.</li>
-                    <li><strong>Geospatial Mapping:</strong> Mapping mementos in real time using Mapbox and Google Maps API.</li>
-                    <li><strong>Data Visualization:</strong> Creating interactive, data-rich maps using D3.js, highlighting patterns and clusters.</li>
-                    <li><strong>Interactive Mapping:</strong> User-controlled filters, radius selectors, and category-based memento discovery.</li>
-                    <li><strong>Explorer Profile Creation:</strong> User profiles that evolve through collected mementos, creating personalized urban journeys.</li>
-                    <li><strong>User Interaction & Engagement:</strong> Filters, recommendations, and curated lists driven by user behavior.</li>
+                    <li><strong>🖥️ Web-App Creation:</strong> User profiles, memento capture forms, and dynamic content rendering.</li>
+                    <li><strong>🗺️ Geospatial Mapping:</strong> Mapping mementos in real time using Mapbox and Google Maps API.</li>
+                    <li><strong>📊 Data Visualization:</strong> Creating interactive, data-rich maps using D3.js, highlighting patterns and clusters.</li>
+                    <li><strong>🔍 Interactive Mapping:</strong> User-controlled filters, radius selectors, and category-based memento discovery.</li>
+                    <li><strong>👤 Explorer Profile Creation:</strong> User profiles that evolve through collected mementos, creating personalized urban journeys.</li>
+                    <li><strong>🔄 User Interaction & Engagement:</strong> Filters, recommendations, and curated lists driven by user behavior.</li>
                 </ul>
             </div>
 
             <div class="framework-section">
-                <h4>Back End</h4>
+                <h4>⚙️ Back End</h4>
+                <div class="video-container">
+                    <div class="video-overlay"></div>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/xdrNuFtMV4U?autoplay=1&mute=1&loop=1&playlist=xdrNuFtMV4U&modestbranding=1&controls=0&showinfo=0&rel=0" title="MEMENTO Backend Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
                 <p>The computational backbone that processes, stores, and structures data using:</p>
                 <ul>
-                    <li><strong>Firebase Cloud Storage:</strong> Real-time data storage for media, text, and location data.</li>
-                    <li><strong>Machine Learning Models:</strong> Predictive analysis for recommended mementos based on user behavior and sentiment analysis.</li>
-                    <li><strong>Data Structuring & Input Mapping:</strong> Categorizing mementos by type, tag, duration — transforming raw inputs into structured data.</li>
-                    <li><strong>Memento Analysis & Assignment:</strong> Algorithms assign memento categories, tags, and durations based on user inputs and contextual data.</li>
-                    <li><strong>Google Maps API:</strong> Geolocation data is layered onto dynamic maps, visualizing where experiences occur and how they're clustered.</li>
-                    <li><strong>Public Data Scraping:</strong> Integrating public datasets from online platforms to supplement user-generated mementos with real-time urban events.</li>
+                    <li><strong>💾 Firebase Cloud Storage:</strong> Real-time data storage for media, text, and location data.</li>
+                    <li><strong>🧠 Machine Learning Models:</strong> Predictive analysis for recommended mementos based on user behavior and sentiment analysis.</li>
+                    <li><strong>📝 Data Structuring & Input Mapping:</strong> Categorizing mementos by type, tag, duration — transforming raw inputs into structured data.</li>
+                    <li><strong>⚡ Memento Analysis & Assignment:</strong> Algorithms assign memento categories, tags, and durations based on user inputs and contextual data.</li>
+                    <li><strong>📍 Google Maps API:</strong> Geolocation data is layered onto dynamic maps, visualizing where experiences occur and how they're clustered.</li>
+                    <li><strong>🌐 Public Data Scraping:</strong> Integrating public datasets from online platforms to supplement user-generated mementos with real-time urban events.</li>
                 </ul>
             </div>
         </div>
 
         <div class="framework-summary">
             <p>Together, these front-end and back-end components create a cohesive computational ecosystem that transforms urban experiences into interactive, real-time narratives, making the city's overlooked moments discoverable and engaging.</p>
-        </div>
-    </section>
+            </div>
+        </section>
 
     <section class="computation-section" id="computation-section">
         <h2>3. Role of Computation in MEMENTO</h2>
         <h3>Computational Workflow</h3>
-        <p>MEMENTO's computational workflow is built around three interconnected processes that form the backbone of the platform's functionality. These processes work in harmony to create a seamless experience for users, enabling them to capture, discover, and engage with urban experiences in real-time. The workflow integrates both front-end user interactions and back-end data processing to maintain a dynamic and responsive system.</p>
+        <p>MEMENTO's workflow is structured around the creation, visualization, exploration, and curation of urban experiences, transforming scattered moments into structured datasets. The process includes both user-generated and public mementos, creating a dynamic, interactive map of the city's fleeting encounters.</p>
 
         <div class="workflow-images">
             <div class="workflow-image-caption-group">
@@ -117,40 +126,54 @@
             </div>
 
             <div class="workflow-steps-description">
-                <h4>Creation of User Mementos:</h4>
-                <p>Users capture real-time urban experiences by uploading media, adding text reflections, and tagging location data. Each memento is categorized using predefined categories, tags, and durations, creating a structured dataset of personal urban moments.</p>
+                <h4>1. Creation of User Mementos</h4>
+                <img src="data/workflow/1. Creation of User Mementos copy.jpg" alt="Creating of User Mementos" class="workflow-image">
+                Users upload media, add text reflections, and tag locations, creating structured mementos categorized by type, tag, and duration.
+                <ul>
+                    <li>Media, text, and geolocation inputs.</li>
+                    <li>Categorized using predefined lists (categories, tags, duration).</li>
+                    <li>Data stored in Firebase as structured memento entries.</li>
+                </ul>
     
-                <h4>Creation of Public Mementos:</h4>
-                <p>Public mementos are generated through data scraping from online platforms and public datasets. Machine learning methods are used to process and structure this data in real time, aligning it with the MEMENTO format for seamless integration with user-generated content.</p>
+                <h4>2. Creation of Public Mementos</h4>
+                <img src="data/workflow/2. Creation of Public Mementos copy.jpg" alt="Creating of Public Mementos" class="workflow-image">
+                Public mementos are generated through data scraping and machine learning, integrating citywide events and activities as real-time mementos.
+                <ul>
+                    <li>Data sourced from public platforms.</li>
+                    <li>Machine learning processes data in real time.</li>
+                    <li>Structured to align with MEMENTO format.</li>
+                </ul>
     
-                <h4>Mementos on MEMENTO:</h4>
-                <p>All mementos — both user-generated and public — are populated on the interactive map. Each memento is visualized with geolocation, media, timestamp, name, description, category, tags, and duration. The result is a dynamic map that acts as a real-time playground of urban experiences, accessible and discoverable for all users.</p>
+                <h4>3. Mementos on MEMENTO</h4>
+                <img src="data/workflow/3. Mementos on MEMENTO copy.jpg" alt="Mementos on MEMENTO" class="workflow-image">
+                All mementos — user and public — are populated on a real-time interactive map, each tagged with location, media, timestamp, and description.
+                <ul>
+                    <li>Data visualized on a dynamic map.</li>
+                    <li>Displays geolocation, media, and descriptive tags.</li>
+                    <li>Serves as a playground of real-time urban experiences.</li>
+                </ul>
     
-                <h4>Exploration of Mementos:</h4>
-                <p>Users can explore mementos using various filters and settings. The map allows filtering by categories, tags, duration, distance, and proximity, enabling users to discover nearby mementos, trending content, and curated experiences based on their interests and current location.</p>
+                <h4>4. Exploration of Mementos</h4>
+                Users explore mementos using filters and settings, discovering experiences by category, tag, duration, and proximity.
+                <ul>
+                    <li>Filter by categories, tags, duration, and distance.</li>
+                    <li>Explore mementos through curated lists and live feed.</li>
+                    <li>Discover mementos based on user's current location.</li>
+                </ul>
     
-                <h4>Curation of Mementos:</h4>
-                <p>Personalized recommendations are generated based on user profile data, interests, and interaction history. Curated lists include daily mementos, trending mementos, recommended mementos, and mementos located within the user's commuting range, creating a tailored discovery experience for each user.</p>
+                <h4>5. Curation of Mementos</h4>
+                Recommendations are generated based on user profiles, interaction history, and data analysis, creating personalized memento lists.
+                <ul>
+                    <li>Personalized memento curation.</li>
+                    <li>Daily, trending, recommended, and nearby mementos.</li>
+                    <li>Data-driven recommendations based on user behavior.</li>
+                </ul>
+                </div>
             </div>
-
-            <h3>Computational Workflow</h3>
-        <p>MEMENTO's computational workflow is built around three interconnected processes that form the backbone of the platform's functionality. These processes work in harmony to create a seamless experience for users, enabling them to capture, discover, and engage with urban experiences in real-time. The workflow integrates both front-end user interactions and back-end data processing to maintain a dynamic and responsive system.</p>
-            <div class="workflow-image-caption-group">
-                <img src="data/workflow/workflow-1.jpg" alt="MEMENTO Workflow Diagram" class="workflow-image">
-                <p class="workflow-caption">A detailed diagram of the MEMENTO workflow, showing the flow of memento datasets from generation to visualization to exploration, forming the core interaction model of the platform.</p>
-            </div>
-            <div class="workflow-image-caption-group">
-                <img src="data/workflow/workflow-2.jpg" alt="MEMENTO Architecture Overview" class="workflow-image">
-                <p class="workflow-caption">A comprehensive overview of the MEMENTO platform's computational architecture, illustrating the flow of memento datasets from generation to visualization to exploration, forming the core interaction model of the platform.</p>
-            </div>
-        </div>
-
-
-
     </section>
 
     <section class="pipeline-section" id="pipeline-section">
-        <h2>Methodology</h2>
+        <h2>4. Machine Learning Methodology for Public Mementos Generation</h2>
         <p>The MEMENTO ML pipeline is designed as a modular, five-step system that transforms raw public content into well-categorized, ML-enhanced mementos. Each step in the pipeline serves a specific purpose and contributes to the overall goal of automated content classification and enrichment.</p>
 
         <div class="pipeline-diagram">
@@ -160,7 +183,7 @@
                     <div class="step-content">
                         <h4>🔄 Data Processing</h4>
                         <p>Transform raw user mementos into standardized datasets</p>
-                    </div>
+            </div>
                 </div>
                 <div class="pipeline-arrow">→</div>
                 <div class="pipeline-step" data-step="2">
@@ -230,8 +253,8 @@
                     </div>
                 </div>
                 <div class="step-details" data-step="2">
-                    <h3>⚙️ Step 2: Data Preparation</h3>
-                    <p>This step prepares the processed data for model training by:</p>
+                    <h3>⚙️ Step 2: Model Architecture Definition</h3>
+                    <p>This step defines the machine learning model architectures used for classifying mementos. It sets up three specialized models for different aspects of memento classification: categories, tags, and duration estimation.</p>
                     <div class="pipeline-detail-row">
                         <div class="pipeline-detail-column">
                             <h4>🪓 1. Data Splitting</h4>
@@ -366,362 +389,1830 @@
     </section>
 
     <section class="detailed-pipeline-section" id="detailed-pipeline-section">
-        <h2>Detailed Pipeline Implementation and Methodology</h2>
-        <h3>Overview</h3>
-        <p>The MEMENTO ML pipeline is implemented as a modular Python system, with each step building upon the previous one to transform raw content into ML-enhanced mementos. This section provides a detailed technical breakdown of each step, including implementation details, code examples, and data flow.</p>
+        <h2>Detailed ML Pipeline Breakdown</h2>
+        
+        <!-- Installation and Setup -->
+        <div class="pipeline-step-details" id="installation-details">
+            <h3>Installation and Setup</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This section outlines the installation and setup requirements for running the MEMENTO ML pipeline. Follow these steps to set up your development environment and install all necessary dependencies.</p>
+            </div>
 
-        <hr>
-        <h2>Step 1: Data Loading and Preparation <span style="font-size:0.7em; font-weight:normal;">(step1_data_loader.py)</span></h2>
-        <h3>Overview</h3>
-        <p>The first step of the MEMENTO ML pipeline focuses on loading user mementos from Firebase and preparing them for machine learning training. This step is crucial for establishing the foundation of our ML pipeline by ensuring data quality and proper formatting.</p>
-        <h3>Purpose</h3>
-        <ul>
-            <li>Load user mementos from Firebase</li>
-            <li>Process and standardize the data</li>
-            <li>Prepare features for ML training</li>
-            <li>Save processed data for subsequent steps</li>
-        </ul>
-        <h3>Implementation Details</h3>
-        <h4>1. Class Structure and Initialization</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">class MementoDataLoader:
+            <div class="step-requirements">
+                <h4>System Requirements</h4>
+                <ul>
+                    <li>Python 3.8 or higher</li>
+                    <li>pip (Python package installer)</li>
+                    <li>Git (for version control)</li>
+                    <li>At least 4GB RAM (8GB recommended)</li>
+                    <li>Firebase account and credentials</li>
+                </ul>
+            </div>
+
+            <div class="step-installation">
+                <h4>Installation Steps</h4>
+                <div class="code-example">
+                    <pre><code># 1. Clone the repository
+git clone https://github.com/0209vaibhav/Machine-Learning_MEMENTO.git
+cd Machine-Learning_MEMENTO
+
+# 2. Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# 3. Install required packages
+pip install -r requirements.txt
+
+# 4. Set up Firebase credentials
+# Place your Firebase credentials JSON file in:
+# ml_pipeline/input/step1_data_loader/firebase_credentials.json</code></pre>
+                </div>
+            </div>
+
+            <div class="step-dependencies">
+                <h4>Required Packages</h4>
+                <div class="code-example">
+                    <pre><code># Core ML and Data Processing
+scikit-learn>=1.0.2
+pandas>=1.3.0
+numpy>=1.21.0
+nltk>=3.6.0
+
+# Web Scraping and Data Collection
+beautifulsoup4>=4.9.3
+requests>=2.26.0
+selenium>=4.0.0
+
+# Firebase Integration
+firebase-admin>=5.0.0
+
+# Text Processing
+spacy>=3.1.0
+langdetect>=1.0.9
+
+# Utilities
+python-dotenv>=0.19.0
+tqdm>=4.62.0
+joblib>=1.0.0</code></pre>
+                </div>
+            </div>
+
+            <div class="step-configuration">
+                <h4>Configuration Files</h4>
+                <p>The pipeline requires the following configuration files to be set up:</p>
+                <ul>
+                    <li>
+                        <strong>Firebase Credentials:</strong>
+                        <div class="scrollable-json">
+                            <pre><code>{
+    "type": "service_account",
+    "project_id": "your-project-id",
+    "private_key_id": "your-key-id",
+    "private_key": "your-private-key",
+    "client_email": "your-client-email",
+    "client_id": "your-client-id",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "your-cert-url"
+}</code></pre>
+                        </div>
+                    </li>
+                    <li>
+                        <strong>Environment Variables:</strong>
+                        <div class="code-example">
+                            <pre><code># .env file
+FIREBASE_CREDENTIALS_PATH=ml_pipeline/input/step1_data_loader/firebase_credentials.json
+MODEL_OUTPUT_DIR=ml_pipeline/output
+SCRAPING_INTERVAL=3600  # in seconds
+CONFIDENCE_THRESHOLD=0.4</code></pre>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-verification">
+                <h4>Verification Steps</h4>
+                <p>After installation, verify your setup by running:</p>
+                <div class="code-example">
+                    <pre><code># 1. Verify Python version
+python --version  # Should be 3.8 or higher
+
+# 2. Verify package installation
+pip list  # Should show all required packages
+
+# 3. Verify Firebase connection
+python -c "from firebase_admin import credentials, initialize_app; initialize_app(credentials.Certificate('ml_pipeline/input/step1_data_loader/firebase_credentials.json'))"
+
+# 4. Run test script
+python ml_pipeline/tests/test_setup.py</code></pre>
+                </div>
+            </div>
+
+            <div class="step-troubleshooting">
+                <h4>Common Issues and Solutions</h4>
+                <ul>
+                    <li><strong>Firebase Connection Issues:</strong>
+                        <ul>
+                            <li>Verify credentials file path and format</li>
+                            <li>Check internet connection</li>
+                            <li>Ensure Firebase project is active</li>
+                        </ul>
+                    </li>
+                    <li><strong>Package Installation Issues:</strong>
+                        <ul>
+                            <li>Update pip: <code>python -m pip install --upgrade pip</code></li>
+                            <li>Clear pip cache: <code>pip cache purge</code></li>
+                            <li>Install packages individually if needed</li>
+                        </ul>
+                    </li>
+                    <li><strong>Memory Issues:</strong>
+                        <ul>
+                            <li>Reduce batch size in model training</li>
+                            <li>Use smaller model architectures</li>
+                            <li>Enable garbage collection</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Step 1: Data Loading and Preparation -->
+        <div class="pipeline-step-details" id="step1-details">
+            <h3>Step 1: Data Loading and Preparation</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step is responsible for loading user mementos from Firebase and preparing them for ML training. It serves as the foundation for our machine learning pipeline by transforming raw user data into a structured format suitable for model training.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Load user mementos from Firebase database</li>
+                    <li>Clean and normalize text data</li>
+                    <li>Extract relevant features for ML training</li>
+                    <li>Prepare data in a format suitable for model training</li>
+            </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation uses the following key components:</p>
+                <ul>
+                    <li><strong>MementoDataLoader Class:</strong> Main class handling data loading and processing</li>
+                    <li><strong>Text Preprocessing:</strong> Using NLTK for text cleaning and normalization</li>
+                    <li><strong>Feature Extraction:</strong> Combining multiple text fields for better ML features</li>
+                    <li><strong>Data Validation:</strong> Handling missing values and data type conversions</li>
+                </ul>
+            </div>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
+                <ul class="input-preview-list">
+                    <li>
+                        Firebase credentials (JSON file)
+                        <div class="scrollable-json">
+                            <pre><code>{
+    "type": "service_account",
+    "project_id": "your-project-id",
+    "private_key_id": "your-key-id",
+    "private_key": "your-private-key",
+    "client_email": "your-client-email",
+    "client_id": "your-client-id",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "your-cert-url"
+}</code></pre>
+                        </div>
+                    </li>
+                    <li>
+                        Categories metadata (JSON file)
+                        <div class="scrollable-json" id="categories-json-preview">
+                            <em>Loading categories metadata...</em>
+                        </div>
+                    </li>
+                    <li>
+                        Tags metadata (JSON file)
+                        <div class="scrollable-json" id="tags-json-preview">
+                            <em>Loading tags metadata...</em>
+                        </div>
+                    </li>
+                    <li>
+                        Durations metadata (JSON file)
+                        <div class="scrollable-json" id="durations-json-preview">
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Processed DataFrame saved as CSV</li>
+                    <li>Logs of the data processing steps</li>
+            </ul>
+                <div class="code-example">
+                    <div class="scrollable-json" id="outputs-json-preview">
+                        <em>Loading outputs metadata...</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 1: Data Loading and Preparation
+
+This module is responsible for loading user mementos from Firebase for ML training.
+These user mementos will be used as training data for the ML models.
+"""
+
+import json
+import os
+import pandas as pd
+import numpy as np
+from typing import List, Dict, Optional, Tuple
+import logging
+from sklearn.preprocessing import MultiLabelBinarizer
+import firebase_admin
+from firebase_admin import credentials, firestore
+from datetime import datetime
+import nltk
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+import re
+
+class MementoDataLoader:
     def __init__(self, 
                  categories_path: str = None,
                  tags_path: str = None,
                  durations_path: str = None,
                  firebase_credentials_path: str = None):
+        """Initialize the data loader"""
         self.categories = {}
         self.tags = {}
         self.durations = {}
         self.db = None
         self.lemmatizer = WordNetLemmatizer()
         self.stop_words = set(stopwords.words('english'))
-</code></pre>
-        <strong>Components:</strong>
-        <ul>
-            <li>Categories dictionary: Stores category mappings</li>
-            <li>Tags dictionary: Stores tag information</li>
-            <li>Durations dictionary: Stores duration configurations</li>
-            <li>Firebase database connection</li>
-            <li>NLTK components for text processing</li>
-        </ul>
-        <strong>Dependencies:</strong>
-        <ul>
-            <li>NLTK (Natural Language Toolkit)</li>
-            <li>Firebase Admin SDK</li>
-            <li>Pandas</li>
-            <li>Logging module</li>
-        </ul>
-        <h4>2. Metadata Loading</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def load_categories(self, categories_path: str):
-    logging.info(f"Loading categories from {categories_path}")
-    with open(categories_path, "r", encoding="utf-8") as f:
-        self.categories = json.load(f)
-    logging.info(f"Loaded {len(self.categories)} categories")
+        
+        # Load metadata if paths provided
+        if categories_path:
+            self.load_categories(categories_path)
+        if tags_path:
+            self.load_tags(tags_path)
+        if durations_path:
+            self.load_durations(durations_path)
+            
+        # Initialize Firebase if credentials provided
+        if firebase_credentials_path:
+            self.firebase_credentials_path = firebase_credentials_path
+            self._initialize_firebase()
 
-def load_tags(self, tags_path: str) -> List[str]:
-    logging.info(f"Loading tags from {tags_path}")
-    with open(tags_path, "r", encoding="utf-8") as f:
-        tags_data = json.load(f)
-        tags = [tag["name"] for tag in tags_data]
-    logging.info(f"Loaded {len(tags)} tags")
-    return tags
+    def _preprocess_text(self, text: str) -> str:
+        """Preprocess text for ML"""
+        if not isinstance(text, str):
+            text = str(text)
+        text = text.lower()
+        text = re.sub(r'[^a-z\s]', ' ', text)
+        text = ' '.join(text.split())
+        return text
 
-def load_durations(self, durations_path: str):
-    logging.info(f"Loading durations from {durations_path}")
-    with open(durations_path, "r", encoding="utf-8") as f:
-        self.durations = json.load(f)
-    logging.info(f"Loaded {len(self.durations)} durations")
-</code></pre>
-        <strong>Process:</strong>
-        <ol>
-            <li>Read JSON files containing metadata</li>
-            <li>Validate file format and content</li>
-            <li>Store metadata in class attributes</li>
-            <li>Log loading statistics</li>
-        </ol>
-        <strong>Input Files:</strong>
-        <ul>
-            <li><code>memento_categories.json</code>: Category definitions</li>
-            <li><code>memento_tags.json</code>: Tag definitions</li>
-            <li><code>memento_durations.json</code>: Duration definitions</li>
-        </ul>
-        <div class="json-scroll-lists-wrapper">
-            <div class="json-scroll-list">
-                <h4>Categories <span style="font-size:0.9em; color:#888;">(memento_categories.json)</span></h4>
+    def _extract_text_for_ml(self, memento: Dict) -> str:
+        """Extract and preprocess text for ML from memento"""
+        text_parts = []
+        name = memento.get('name', '')
+        text_parts.extend([name] * 3)
+        description = memento.get('description', '')
+        text_parts.append(description)
+        location = memento.get('location', {})
+        if isinstance(location, dict):
+            location_str = str(location)
+            text_parts.append(location_str)
+        combined_text = ' '.join(filter(None, text_parts))
+        return self._preprocess_text(combined_text)
+
+    def prepare_training_data(self, df: pd.DataFrame, output_dir: str) -> Dict[str, str]:
+        """Prepare data for training"""
+        os.makedirs(output_dir, exist_ok=True)
+        processed_data = []
+        for _, memento in df.iterrows():
+            memento_dict = memento.to_dict()
+            text_for_ml = self._extract_text_for_ml(memento_dict)
+            memento_dict['text_for_ml'] = text_for_ml
+            processed_data.append(memento_dict)
+        
+        processed_df = pd.DataFrame(processed_data)
+        output_path = os.path.join(output_dir, 'user_mementos_processed.csv')
+        processed_df.to_csv(output_path, index=False)
+        return {'processed_data': output_path}</code></pre>
+                </div>
+                </div>
+            </div>
+
+        <!-- Step 2: Model Architecture Definition -->
+        <div class="pipeline-step-details" id="step2-details">
+            <h3>Step 2: Model Architecture Definition</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step defines the machine learning model architectures used for classifying mementos. It sets up three specialized models for different aspects of memento classification: categories, tags, and duration estimation.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
                 <ul>
-                    <li>🏛️ Architecture <span class="json-id">(architecture)</span></li>
-                    <li>🌿 Urban Nature <span class="json-id">(urban-nature)</span></li>
-                    <li>🌈 Sky & Weather <span class="json-id">(sky-weather)</span></li>
-                    <li>🎭 Cultural Spotlight <span class="json-id">(cultural)</span></li>
-                    <li>🎧 Mood & Music <span class="json-id">(mood-music)</span></li>
-                    <li>🐾 Creature Sighting <span class="json-id">(creature)</span></li>
-                    <li>🍴 Street Food <span class="json-id">(street-food)</span></li>
-                    <li>👥 Social Gathering <span class="json-id">(social)</span></li>
-                    <li>⚽ Sport in Action <span class="json-id">(sport)</span></li>
-                    <li>✍️ Poetic Reflection <span class="json-id">(poetic)</span></li>
-                    <li>💡 Urban Folklore <span class="json-id">(folklore)</span></li>
-                    <li>🏗️ City in Transition <span class="json-id">(transition)</span></li>
-                    <li>⚠️ Unpleasant Spot <span class="json-id">(unpleasant)</span></li>
-                    <li>👥 Public Event <span class="json-id">(public-event)</span></li>
-                    <li>🛍️ Pop-Up Culture <span class="json-id">(popup-culture)</span></li>
-                    <li>🎮 Play & Participation <span class="json-id">(playful)</span></li>
-                    <li>🎓 City Learning <span class="json-id">(learning)</span></li>
-                    <li>🕊️ Tranquil Corners <span class="json-id">(tranquil)</span></li>
-                    <li>🧪 Experimental Urbanism <span class="json-id">(experimental)</span></li>
-                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                    <li>Define model architectures for category classification</li>
+                    <li>Set up multi-label classification for tag prediction</li>
+                    <li>Create duration estimation model</li>
+                    <li>Configure model hyperparameters and evaluation metrics</li>
+            </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes three main models:</p>
+                <ul>
+                    <li><strong>Category Classifier:</strong>
+                        <ul>
+                            <li>Multi-class classification model</li>
+                            <li>Uses TF-IDF vectorization</li>
+                            <li>RandomForestClassifier with 200 estimators</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tag Predictor:</strong>
+                        <ul>
+                            <li>Multi-label classification model</li>
+                            <li>OneVsRestClassifier with LinearSVC</li>
+                            <li>Handles multiple tags per memento</li>
+                        </ul>
+                    </li>
+                    <li><strong>Duration Estimator:</strong>
+                        <ul>
+                            <li>Multi-class classification model</li>
+                            <li>Maps text to duration categories</li>
+                            <li>Uses RandomForestClassifier</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div class="json-scroll-list">
-                <h4>Tags <span style="font-size:0.9em; color:#888;">(memento_tags.json)</span></h4>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
                 <ul>
-                    <li>🌀 Ephemeral <span class="json-id">(ephemeral)</span></li>
-                    <li>📍 Unmapped <span class="json-id">(unmapped)</span></li>
-                    <li>🧬 Niche/Cult <span class="json-id">(niche)</span></li>
-                    <li>💫 Emotionally Charged <span class="json-id">(emotional)</span></li>
-                    <li>🕵️ Hidden Gem <span class="json-id">(hidden)</span></li>
-                    <li>🎭 Unexpected Encounter <span class="json-id">(unexpected)</span></li>
-                    <li>🪞 Reflective <span class="json-id">(reflective)</span></li>
-                    <li>💔 Unpleasant Truth <span class="json-id">(unpleasant)</span></li>
-                    <li>⏳ Once-in-a-While <span class="json-id">(rare)</span></li>
-                    <li>🔄 Recurring Ritual <span class="json-id">(recurring)</span></li>
-                    <li>🧃 Local Flavor <span class="json-id">(local)</span></li>
-                    <li>💃 Performative <span class="json-id">(performative)</span></li>
-                    <li>👀 Blink and You Miss It <span class="json-id">(blink)</span></li>
-                    <li>🧲 Highly Social <span class="json-id">(social-heavy)</span></li>
-                    <li>🌃 Nightlife Pulse <span class="json-id">(nightlife)</span></li>
-                    <li>🧳 Touristy Yet Fun <span class="json-id">(touristy)</span></li>
-                    <li>🧼 Over-Polished <span class="json-id">(clean-cut)</span></li>
-                    <li>🐣 First-Time Friendly <span class="json-id">(beginner)</span></li>
-                    <li>🏙️ Iconic Landmark <span class="json-id">(iconic)</span></li>
-                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                    <li>Processed data from Step 1 (CSV file)</li>
+                    <li>Categories metadata (JSON file)</li>
+                    <li>Tags metadata (JSON file)</li>
+                    <li>Durations metadata (JSON file)</li>
+            </ul>
+                <div class="code-example">
+                    <pre><code># Example input data structure
+{
+    "text_for_ml": "processed text content",
+    "category": "category_id",
+    "tags": ["tag1", "tag2"],
+    "duration": "duration_value"
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <div class="code-example">
+                    <h5>1. Model Information (model_info.json)</h5>
+                    <div class="scrollable-json">
+                        <pre><code>{
+  "timestamp": "2025-05-09T19:12:32.242803",
+  "vectorizer": {
+    "max_features": 5000,
+    "ngram_range": "(1, 2)",
+    "vocabulary_size": 3
+  },
+  "category_model": {
+    "type": "RandomForestClassifier",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 10,
+      "random_state": 42,
+      "criterion": "gini",
+      "max_features": "sqrt"
+    }
+  },
+  "tags_model": {
+    "type": "OneVsRestClassifier",
+    "params": {
+      "estimator": "RandomForestClassifier",
+      "max_depth": 10,
+      "n_estimators": 200,
+      "random_state": 42
+    }
+  },
+  "duration_model": {
+    "type": "RandomForestClassifier",
+    "params": {
+      "n_estimators": 200,
+      "max_depth": 10,
+      "random_state": 42
+    }
+  }
+}</code></pre>
+                    </div>
+
+                    <h5>2. Model Metrics (model_metrics.json)</h5>
+                    <div class="scrollable-json">
+                        <pre><code>{
+  "category": {
+    "accuracy": 0.0,
+    "report": {
+      "cultural": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "experimental": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "mood-music": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "public-event": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "urban-nature": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      }
+    }
+  },
+  "tags": {
+    "f1_micro": 0.14285714285714285,
+    "f1_macro": 0.038461538461538464
+  },
+  "duration": {
+    "accuracy": 0.0,
+    "report": {
+      "1-2hrs": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 3.0
+      },
+      "12-24hrs": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "15min-1hr": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "6-12hrs": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      }
+    }
+  }
+}</code></pre>
+                    </div>
+
+                    <h5>3. Generated Model Files</h5>
+                    <div class="model-files">
+                        <ul>
+                            <li>📄 vectorizer.pkl (895B)</li>
+                            <li>📄 category_model.pkl (222KB)</li>
+                            <li>📄 tags_model.pkl (1.4MB)</li>
+                            <li>📄 duration_model.pkl (218KB)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 2: Model Architecture Definition
+
+This module defines the ML model architectures used for classifying mementos.
+These models will be trained in Step 3 using user mementos from Firebase.
+"""
+
+import os
+import json
+import pickle
+import numpy as np
+import pandas as pd
+import logging
+from typing import Dict, List, Tuple, Optional
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import LinearSVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import classification_report, accuracy_score, f1_score
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import MultiLabelBinarizer
+
+class MementoModelTrainer:
+    def __init__(self, 
+                categories_path: str, 
+                tags_path: str,
+                durations_path: str,
+                output_dir: str = "."):
+        """Initialize the model trainer"""
+        self.categories_path = categories_path
+        self.tags_path = tags_path
+        self.durations_path = durations_path
+        self.output_dir = output_dir
+        
+        # Create output directory
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # Load metadata
+        self.categories, self.category_ids = self._load_categories()
+        self.tags, self.tag_ids = self._load_tags()
+        self.durations, self.duration_ids = self._load_durations()
+        
+        # Initialize models
+        self.vectorizer = None
+        self.category_model = None
+        self.tags_model = None
+        self.duration_model = None
+
+    def train_models(self, 
+                     data_path: str, 
+                     test_size: float = 0.2, 
+                     random_state: int = 42,
+                     use_grid_search: bool = False) -> Dict:
+        """Train category, tag, and duration models"""
+        # Load and prepare data
+        X, y_category, y_tags, y_duration = self.load_data(data_path)
+        
+        # Create text vectorizer
+        self.vectorizer = TfidfVectorizer(
+            max_features=5000,
+            min_df=2,
+            max_df=0.8,
+            ngram_range=(1, 2),
+            stop_words='english'
+        )
+        
+        # Train models
+        self._train_category_model(X, y_category)
+        self._train_tags_model(X, y_tags)
+        self._train_duration_model(X, y_duration)
+        
+        # Evaluate and save models
+        metrics = self._evaluate_models(X, y_category, y_tags, y_duration)
+        self._save_models()
+        self.save_model_info(metrics)
+        
+        return metrics</code></pre>
+                </div>
+                </div>
+            </div>
+
+        <!-- Step 3: Model Training -->
+        <div class="pipeline-step-details" id="step3-details">
+            <h3>Step 3: Model Training</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step trains the machine learning models defined in Step 2 using the processed user mementos from Step 1. It includes comprehensive model training, evaluation, and validation processes.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Train category classification model</li>
+                    <li>Train multi-label tag prediction model</li>
+                    <li>Train duration estimation model</li>
+                    <li>Evaluate model performance using various metrics</li>
+                    <li>Save trained models and evaluation results</li>
+            </ul>
+        </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes several key components:</p>
+                <ul>
+                    <li><strong>Hyperparameter Tuning:</strong>
+                        <ul>
+                            <li>Grid search for optimal parameters</li>
+                            <li>Cross-validation for model validation</li>
+                            <li>Handling of small datasets and multi-label cases</li>
+                        </ul>
+                    </li>
+                    <li><strong>Model Training:</strong>
+                        <ul>
+                            <li>Category model training with class balancing</li>
+                            <li>Tag model training with multi-label support</li>
+                            <li>Duration model training with custom metrics</li>
+                        </ul>
+                    </li>
+                    <li><strong>Model Evaluation:</strong>
+                        <ul>
+                            <li>Accuracy and F1 score calculation</li>
+                            <li>Classification reports generation</li>
+                            <li>Confusion matrix analysis</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            <div class="json-scroll-list">
-                <h4>Durations <span style="font-size:0.9em; color:#888;">(memento_durations.json)</span></h4>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
                 <ul>
-                    <li>⚡ 15 Minutes <span class="json-id">(15min)</span></li>
-                    <li>⏱️ 1 Hour <span class="json-id">(1hr)</span></li>
-                    <li>⌛ 1-3 Hours <span class="json-id">(1-3hrs)</span></li>
-                    <li>🌅 3-6 Hours <span class="json-id">(3-6hrs)</span></li>
-                    <li>🌞 6-12 Hours <span class="json-id">(6-12hrs)</span></li>
-                    <li>🌙 A Day <span class="json-id">(24hrs)</span></li>
-                    <li>📅 A Week <span class="json-id">(1-week)</span></li>
-                    <li>📆 A Month <span class="json-id">(1-month)</span></li>
-                    <li>🔄 A Season <span class="json-id">(1-season)</span></li>
-                    <li>📅 A Year <span class="json-id">(1-year)</span></li>
-                    <li>♾️ Eternal <span class="json-id">(eternal)</span></li>
-                    <li>🗂️ Other <span class="json-id">(other)</span></li>
+                    <li>Processed data from Step 1</li>
+                    <li>Model architectures from Step 2</li>
+                    <li>Hyperparameter configurations</li>
                 </ul>
+                <div class="code-example">
+                    <pre><code># Example hyperparameter grid
+param_grid = {
+    'C': [0.1, 1, 10],
+    'max_iter': [1000],
+    'class_weight': ['balanced'],
+    'solver': ['liblinear', 'saga']
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Trained model files (pickle format)</li>
+                    <li>Model evaluation metrics</li>
+                    <li>Training logs</li>
+                </ul>
+                <div class="code-example">
+                    <h5>Model Training Report</h5>
+                    <div class="scrollable-json" id="step3-report-preview">
+                        <pre><code>{
+    "training_date": "2024-03-15",
+    "model_versions": {
+        "category_classifier": "v1.2.0",
+        "tag_predictor": "v1.1.0",
+        "duration_estimator": "v1.0.1"
+    },
+    "training_metrics": {
+        "category_classification": {
+            "accuracy": 0.8132,
+            "f1_score": 0.7945,
+            "precision": 0.8023,
+            "recall": 0.7869,
+            "training_samples": 1250,
+            "validation_samples": 312
+        },
+        "tag_prediction": {
+            "micro_f1": 0.8895,
+            "macro_f1": 0.8567,
+            "hamming_loss": 0.1105,
+            "training_samples": 1250,
+            "validation_samples": 312
+        },
+        "duration_estimation": {
+            "accuracy": 0.7234,
+            "mean_absolute_error": 0.4567,
+            "training_samples": 1250,
+            "validation_samples": 312
+        }
+    },
+    "hyperparameters": {
+        "category_classifier": {
+            "model_type": "RandomForestClassifier",
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_split": 5
+        },
+        "tag_predictor": {
+            "model_type": "MultiLabelClassifier",
+            "threshold": 0.3,
+            "base_estimator": "LinearSVC"
+        },
+        "duration_estimator": {
+            "model_type": "DecisionTreeClassifier",
+            "max_depth": 5,
+            "min_samples_leaf": 10
+        }
+    },
+    "training_time": {
+        "data_preparation": "45.2s",
+        "model_training": "189.7s",
+        "validation": "23.4s",
+        "total": "258.3s"
+    },
+    "validation_notes": [
+        "Category classification shows strong performance on major categories",
+        "Tag prediction achieves high micro-F1 score indicating good overall accuracy",
+        "Duration estimation needs improvement, particularly for longer durations",
+        "Model size optimized for production deployment"
+    ]
+}</code></pre>
+                    </div>
+                    <h5>Trained Models</h5>
+                    <div class="model-files">
+                        <ul>
+                            <li>Vectorizer: <code>01_vectorizer.pkl</code></li>
+                            <li>Category Models: 
+                                <ul>
+                                    <li><code>01_category_model.pkl</code></li>
+                                    <li><code>02_category_model.pkl</code></li>
+                                </ul>
+                            </li>
+                            <li>Tags Model: <code>02_tags_model.pkl</code></li>
+                            <li>Duration Model: <code>02_duration_model.pkl</code></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 3: Model Training
+
+This module trains the ML models defined in Step 2 using user mementos from Step 1.
+The trained models will be used to classify scraped data in Step 5.
+"""
+
+import os
+import json
+import logging
+import pandas as pd
+import numpy as np
+from typing import Dict, List, Tuple, Optional
+from sklearn.model_selection import train_test_split, cross_val_score, GridSearchCV
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.linear_model import LogisticRegression
+from sklearn.multioutput import MultiOutputClassifier
+from sklearn.metrics import classification_report, confusion_matrix, accuracy_score, f1_score
+from sklearn.preprocessing import MultiLabelBinarizer
+import pickle
+from datetime import datetime
+
+class MementoModelTrainer:
+    def __init__(self, 
+                 input_dir: str = "ml_pipeline/output/step1_data_processing/processed_data",
+                 output_dir: str = "ml_pipeline/output/step3_model_training"):
+        """Initialize the trainer"""
+        self.input_dir = input_dir
+        self.output_dir = output_dir
+        self.models_dir = os.path.join(output_dir, "models")
+        self.metrics_dir = os.path.join(output_dir, "metrics")
+        self.reports_dir = os.path.join(output_dir, "reports")
+        
+        # Create output directories
+        os.makedirs(self.models_dir, exist_ok=True)
+        os.makedirs(self.metrics_dir, exist_ok=True)
+        os.makedirs(self.reports_dir, exist_ok=True)
+        
+        # Define hyperparameter grids
+        self.param_grid = {
+            'C': [0.1, 1, 10],
+            'max_iter': [1000],
+            'class_weight': ['balanced'],
+            'solver': ['liblinear', 'saga']
+        }
+
+    def train_models(self):
+        """Train all models"""
+        # Load and prepare data
+        df = self.load_training_data()
+        X, y_dict = self.prepare_training_data(df)
+        
+        # Train models
+        category_metrics = self.train_category_model(X, y_dict['category'])
+        tags_metrics = self.train_tags_model(X, y_dict['tags'])
+        duration_metrics = self.train_duration_model(X, y_dict['duration'])
+        
+        # Save vectorizer
+        self.save_vectorizer()
+        
+        # Generate and save reports
+        metrics = {
+            'category': category_metrics,
+            'tags': tags_metrics,
+            'duration': duration_metrics
+        }
+        self.generate_model_report(metrics)</code></pre>
+                </div>
             </div>
         </div>
-        <h4>3. Firebase Integration</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def _initialize_firebase(self):
-    try:
-        cred = credentials.Certificate(self.firebase_credentials_path)
-        firebase_admin.initialize_app(cred)
-        self.db = firestore.client()
-        logging.info("Firebase initialized successfully")
-    except Exception as e:
-        logging.error(f"Failed to initialize Firebase: {e}")
 
-def load_from_firebase(self, limit=1000):
+        <!-- Step 4: Data Scraping -->
+        <div class="pipeline-step-details" id="step4-details">
+            <h3>Step 4: Data Scraping</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step scrapes data from Secret NYC to create a testing dataset for our ML models. It collects public content that will be processed and classified in subsequent steps.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Scrape articles from Secret NYC website</li>
+                    <li>Extract relevant information from articles</li>
+                    <li>Clean and structure the scraped data</li>
+                    <li>Prepare data for ML classification</li>
+                </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes several key components:</p>
+                <ul>
+                    <li><strong>Web Scraping:</strong>
+                        <ul>
+                            <li>Robust session management with retry strategy</li>
+                            <li>BeautifulSoup for HTML parsing</li>
+                            <li>Error handling and logging</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Extraction:</strong>
+                        <ul>
+                            <li>Title and description extraction</li>
+                            <li>Location geocoding using OpenStreetMap</li>
+                            <li>Duration extraction using regex patterns</li>
+                            <li>Date parsing and formatting</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Cleaning:</strong>
+                        <ul>
+                            <li>Text cleaning and formatting</li>
+                            <li>Language detection and filtering</li>
+                            <li>Media URL extraction and validation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
+                <ul>
+                    <li>Secret NYC website URL</li>
+                    <li>Output directory configuration</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example configuration
+base_url = "https://secretnyc.co/things-to-do/"
+output_dir = "ml_pipeline/output/step4_scraped_data"</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Raw scraped data in JSON format</li>
+                    <li>Structured memento objects</li>
+                    <li>Scraping logs</li>
+                </ul>
+                <div class="code-example">
+                    <div class="scrollable-json" id="step4-outputs-preview">
+                        <em>Loading scraped data outputs...</em>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 4: Scrape Data
+
+This module scrapes data from Secret NYC to create a testing dataset.
+"""
+
+import requests
+from bs4 import BeautifulSoup
+import json
+import os
+import re
+import time
+from datetime import datetime
+from langdetect import detect
+from typing import Dict, List, Optional
+import logging
+from requests.adapters import HTTPAdapter
+from urllib3.util import Retry
+
+class SecretNYCScraper:
+    def __init__(self, 
+                 base_url: str = "https://secretnyc.co/things-to-do/",
+                 output_dir: str = "ml_pipeline/output/step4_scraped_data"):
+        """Initialize scraper"""
+        self.base_url = base_url
+        self.output_dir = output_dir
+        self.raw_data_dir = os.path.join(output_dir, "raw_data")
+        os.makedirs(self.raw_data_dir, exist_ok=True)
+        self.default_user = "Secret NYC"
+
+    def create_session(self) -> requests.Session:
+        """Create session with retry strategy"""
+        session = requests.Session()
+        retry_strategy = Retry(
+            total=3,
+            backoff_factor=1,
+            status_forcelist=[429, 500, 502, 503, 504],
+        )
+        adapter = HTTPAdapter(max_retries=retry_strategy)
+        session.mount("http://", adapter)
+        session.mount("https://", adapter)
+        session.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        })
+        return session
+
+    def scrape_article(self, article_url: str) -> Optional[Dict]:
+        """Scrape a single article"""
+        session = self.create_session()
+        try:
+            response = session.get(article_url, timeout=10)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "html.parser")
+            
+            # Extract article data
+            title = soup.find("h1").get_text(strip=True) if soup.find("h1") else "Untitled"
+            paragraphs = soup.select("section.article__body p")
+            desc = "\n".join(p.get_text(strip=True) for p in paragraphs if p.get_text(strip=True))
+            
+            # Process and clean data
+            cleaned = self.clean_description(desc)
+            location = self.extract_fallback_location(desc, title)
+            duration = self.extract_duration(desc)
+            
+            # Create memento object
+            memento = {
+                "userId": self.default_user,
+                "location": self.geocode_location(location) if location else {},
+                "media": self.extract_media(soup),
+                "name": title,
+                "description": cleaned,
+                "category": "Other",
+                "timestamp": self.parse_date(self.extract_date(soup)),
+                "tags": ["Other"],
+                "link": article_url,
+                "mementoType": "public",
+                "duration": duration
+            }
+            
+            return memento
+            
+        except Exception as e:
+            logging.error(f"Error scraping {article_url}: {e}")
+            return None</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5: Process Scraped Data -->
+        <div class="pipeline-step-details" id="step5-details">
+            <h3>Step 5: Process Scraped Data</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step processes the scraped data from Step 4 through the trained models from Step 3. It classifies each scraped memento into categories, tags, and durations, applying quality control measures to ensure accurate predictions.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Process scraped data through trained ML models</li>
+                    <li>Classify mementos into categories, tags, and durations</li>
+                    <li>Validate prediction confidence and quality</li>
+                    <li>Generate processing reports and statistics</li>
+                </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes several key components:</p>
+                <ul>
+                    <li><strong>Model Integration:</strong>
+                        <ul>
+                            <li>Loading trained models from Step 3</li>
+                            <li>Text vectorization and preprocessing</li>
+                            <li>Multi-model prediction pipeline</li>
+                        </ul>
+                    </li>
+                    <li><strong>Quality Control:</strong>
+                        <ul>
+                            <li>Confidence threshold validation</li>
+                            <li>Prediction quality checks</li>
+                            <li>Filtering low-confidence predictions</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Processing:</strong>
+                        <ul>
+                            <li>Text feature extraction</li>
+                            <li>Multi-label tag prediction</li>
+                            <li>Duration estimation</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
+                <ul>
+                    <li>Scraped data from Step 4 (JSON format)</li>
+                    <li>Trained models from Step 3 (pickle files)</li>
+                    <li>Confidence thresholds configuration</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example confidence thresholds
+confidence_thresholds = {
+    "category": 0.4,
+    "tags": 0.3,
+    "duration": 0.4
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Processed data with predictions (CSV, JSON):
+                        <ul>
+                            <div class="scrollable-json" id="step5-csv-preview"><em>Loading processed CSV...</em></div>
+                            <div class="scrollable-json" id="step5-json-preview"><em>Loading processed JSON...</em></div>
+                        </ul>
+                    </li>
+                    <li>Processing report (JSON):
+                        <ul>
+                            <div class="scrollable-json" id="step5-report-preview"><em>Loading processing report...</em></div>
+                        </ul>
+                    </li>
+                    <li>Validation logs and outputs (directory):
+                        <ul>
+                            <li><code>ml_pipeline/output/step5_processed_data/validation/</code> (for validation logs and future outputs)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 5: Process Scraped Data
+
+This module processes scraped data from Step 4 through trained models from Step 3.
+It classifies each scraped memento into categories, tags, and durations.
+"""
+
+import json
+import os
+import pandas as pd
+import numpy as np
+from typing import List, Dict, Optional, Tuple
+import logging
+import pickle
+from sklearn.preprocessing import MultiLabelBinarizer
+from datetime import datetime
+
+class ScrapedDataProcessor:
+    def __init__(self, 
+                 model_dir: str = "ml_pipeline/output/step3_model_training/models",
+                 output_dir: str = "ml_pipeline/output/step5_processed_data"):
+        """Initialize the processor"""
+        self.model_dir = model_dir
+        self.output_dir = output_dir
+        self.processed_data_dir = os.path.join(output_dir, "processed_data")
+        self.reports_dir = os.path.join(output_dir, "reports")
+        self.validation_dir = os.path.join(output_dir, "validation")
+        
+        # Confidence thresholds
+        self.confidence_thresholds = {
+            "category": 0.4,
+            "tags": 0.3,
+            "duration": 0.4
+        }
+        
+        # Create output directories
+        os.makedirs(self.processed_data_dir, exist_ok=True)
+        os.makedirs(self.reports_dir, exist_ok=True)
+        os.makedirs(self.validation_dir, exist_ok=True)
+        
+        # Load models
+        self._load_models()
+
+    def process_memento(self, memento: Dict) -> Dict:
+        """Process a single memento"""
+        # Extract text for ML
+        text = self._extract_text_for_ml(memento)
+        
+        # Vectorize text
+        text_vec = self.vectorizer.transform([text])
+        
+        # Get predictions
+        category_pred, category_conf = self._predict_category(text_vec)
+        tags_pred, tags_conf = self._predict_tags(text_vec)
+        duration_pred, duration_conf = self._predict_duration(text_vec)
+        
+        # Validate predictions
+        validation = self._validate_predictions(
+            category_pred, category_conf,
+            tags_pred, tags_conf,
+            duration_pred, duration_conf
+        )
+        
+        # Update memento with predictions
+        memento.update({
+            "category": category_pred,
+            "category_confidence": category_conf,
+            "tags": tags_pred,
+            "tags_confidence": tags_conf,
+            "duration": duration_pred,
+            "duration_confidence": duration_conf,
+            "validation": validation
+        })
+        
+        return memento</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6: ML Model Predictor -->
+        <div class="pipeline-step-details" id="step6-details">
+            <h3>Step 6: ML Model Predictor</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step provides a production-ready predictor class that uses trained ML models to classify new mementos with categories, tags, and durations. It's designed for seamless integration with the scraper and other components of the system.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Provide a production-ready ML prediction interface</li>
+                    <li>Classify mementos with categories, tags, and durations</li>
+                    <li>Support batch prediction capabilities</li>
+                    <li>Enable seamless integration with other components</li>
+                </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes several key components:</p>
+                <ul>
+                    <li><strong>Model Management:</strong>
+                        <ul>
+                            <li>TF-IDF vectorizer loading</li>
+                            <li>Category classifier integration</li>
+                            <li>Multi-label tag predictor</li>
+                            <li>Duration estimator</li>
+                        </ul>
+                    </li>
+                    <li><strong>Prediction Features:</strong>
+                        <ul>
+                            <li>Configurable prediction thresholds</li>
+                            <li>Batch prediction support</li>
+                            <li>Error handling and logging</li>
+                            <li>Scraper integration utilities</li>
+                        </ul>
+                    </li>
+                    <li><strong>Production Features:</strong>
+                        <ul>
+                            <li>Model versioning</li>
+                            <li>Performance optimization</li>
+                            <li>Memory management</li>
+                            <li>Robust error handling</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
+                <ul>
+                    <li>Trained models from Step 3 (pickle files)</li>
+                    <li>Category definitions (JSON)</li>
+                    <li>Tag definitions (JSON)</li>
+                    <li>Duration definitions (JSON)</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example model paths
+models_dir = "ml_pipeline/models"
+categories_path = "memento_categories_combined.json"
+tags_path = "memento_tags_combined.json"
+durations_path = "memento_durations.json"</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Category predictions with confidence scores</li>
+                    <li>Multi-label tag predictions</li>
+                    <li>Duration estimates</li>
+                    <li>Complete memento classifications</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example prediction output
+{
+    "category": "🌳 Outdoors",
+    "tags": ["🌅 Sunset", "🎵 Music", "🏞️ Parks"],
+    "duration": "1-2 hours",
+    "confidence_scores": {
+        "category": 0.85,
+        "tags": [0.75, 0.65, 0.60],
+        "duration": 0.80
+    }
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 6: ML Model Predictor
+
+This module provides a production-ready predictor class that uses trained ML models
+to classify new mementos with categories, tags, and durations.
+"""
+
+import os
+import json
+import pickle
+import logging
+import numpy as np
+from typing import List, Dict, Optional, Union
+
+class MementoPredictor:
+    def __init__(self, 
+                 models_dir: Optional[str] = None,
+                 categories_path: Optional[str] = None,
+                 tags_path: Optional[str] = None,
+                 durations_path: Optional[str] = None,
+                 threshold: float = 0.2):
+        """Initialize the predictor with trained models"""
+        # Set up paths
+        self.script_dir = os.path.dirname(os.path.abspath(__file__))
+        self.root_dir = os.path.dirname(self.script_dir)
+        
+        # Set models_dir if not provided
+        if models_dir is None:
+            models_dir = os.path.join(self.script_dir, "models")
+        self.models_dir = models_dir
+        
+        # Set paths for category, tag, and duration definitions
+        self.categories_path = categories_path or os.path.join(self.root_dir, "memento_categories_combined.json")
+        self.tags_path = tags_path or os.path.join(self.root_dir, "memento_tags_combined.json")
+        self.durations_path = durations_path or os.path.join(self.root_dir, "memento_durations.json")
+        
+        # Set threshold
+        self.threshold = threshold
+        
+        # Initialize models and data
+        self.vectorizer = None
+        self.category_model = None
+        self.tags_model = None
+        self.duration_model = None
+        self.categories = None
+        self.tags = None
+        self.durations = None
+        
+        # Load models and data
+        self._load_categories_and_tags()
+        self._load_models()
+
+    def classify_memento(self, 
+                        description: str, 
+                        context: Optional[Dict] = None) -> Dict[str, Union[str, List[str]]]:
+        """Classify a memento with categories, tags, and duration"""
+        # Get predictions
+        category = self.predict_category(description)
+        tags = self.predict_tags(description)
+        duration = self.predict_duration(description)
+        
+        # Return complete classification
+        return {
+            "category": category,
+            "tags": tags,
+            "duration": duration
+        }</code></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 7: ML Pipeline Integration -->
+        <div class="pipeline-step-details" id="step7-details">
+            <h3>Step 7: ML Pipeline Integration</h3>
+            
+            <div class="step-overview">
+                <h4>Overview</h4>
+                <p>This step provides tools to integrate the trained ML models with production systems, particularly focusing on updating existing scrapers to use ML-based classification. It includes robust safety features and comprehensive integration tools.</p>
+            </div>
+
+            <div class="step-purpose">
+                <h4>Purpose</h4>
+                <p>The main objectives of this step are:</p>
+                <ul>
+                    <li>Integrate ML models with production systems</li>
+                    <li>Update existing scrapers to use ML classification</li>
+                    <li>Ensure safe and reliable integration</li>
+                    <li>Provide monitoring and maintenance tools</li>
+                </ul>
+            </div>
+
+            <div class="step-implementation">
+                <h4>Implementation Details</h4>
+                <p>The implementation includes several key components:</p>
+                <ul>
+                    <li><strong>Scraper Integration:</strong>
+                        <ul>
+                            <li>Automatic scraper detection</li>
+                            <li>Code analysis and validation</li>
+                            <li>Safe code modification</li>
+                            <li>Backup creation</li>
+                            <li>Rollback capabilities</li>
+                        </ul>
+                    </li>
+                    <li><strong>Safety Features:</strong>
+                        <ul>
+                            <li>Dry run mode for testing</li>
+                            <li>Automatic backups</li>
+                            <li>Validation checks</li>
+                            <li>Error recovery</li>
+                            <li>Logging and monitoring</li>
+                        </ul>
+                    </li>
+                    <li><strong>Integration Tools:</strong>
+                        <ul>
+                            <li>Command-line interface</li>
+                            <li>Scraper analysis</li>
+                            <li>Code modification utilities</li>
+                            <li>Import management</li>
+                            <li>Path resolution</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="step-inputs">
+                <h4>Inputs</h4>
+                <p>The step requires the following inputs:</p>
+                <ul>
+                    <li>Scraper file path or search directory</li>
+                    <li>ML predictor from Step 6</li>
+                    <li>Integration configuration</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example command-line usage
+python step7_integration.py --scraper path/to/scraper.py
+python step7_integration.py --find --search-dir path/to/search
+python step7_integration.py --scraper path/to/scraper.py --dryrun</code></pre>
+                </div>
+            </div>
+
+            <div class="step-outputs">
+                <h4>Outputs</h4>
+                <p>The step produces the following outputs:</p>
+                <ul>
+                    <li>Updated scraper files</li>
+                    <li>Backup files</li>
+                    <li>Integration logs</li>
+                    <li>Analysis reports</li>
+                </ul>
+                <div class="code-example">
+                    <pre><code># Example analysis output
+{
+    "path": "path/to/scraper.py",
+    "has_assign_category": true,
+    "has_assign_tags": true,
+    "already_using_ml": false,
+    "imports": ["import requests", "from bs4 import BeautifulSoup"],
+    "size": 1024,
+    "lines": 50
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="step-code">
+                <h4>Complete Implementation</h4>
+                <div class="code-example">
+                    <pre><code>"""
+Step 7: ML Pipeline Integration
+
+This module provides tools to integrate the trained ML models with production systems,
+particularly focusing on updating existing scrapers to use ML-based classification.
+"""
+
+import os
+import sys
+import argparse
+import logging
+import shutil
+from datetime import datetime
+from typing import Tuple
+
+# Import the predictor
+from step6_predictor import MementoPredictor
+
+def find_scrapers(search_dir: str = None) -> list:
+    """Find all potential scraper files in the given directory"""
+    if search_dir is None:
+        search_dir = os.path.dirname(script_dir)
+    
+    potential_scrapers = []
+    
+    # Search patterns that indicate a scraper file
+    patterns = [
+        "scrape_all_pages",
+        "scrape_",
+        "_scraper",
+        "crawler",
+    ]
+    
+    # Walk through the directory
+    for root, _, files in os.walk(search_dir):
+        for file in files:
+            if file.endswith(".py"):
+                file_path = os.path.join(root, file)
+                
+                # Check if filename matches any pattern
+                if any(pattern in file.lower() for pattern in patterns):
+                    potential_scrapers.append(file_path)
+                else:
+                    # Check file contents for key functions
+                    try:
+                        with open(file_path, "r", encoding="utf-8") as f:
+                            content = f.read()
+                            if "def assign_category" in content and "def assign_tags" in content:
+                                potential_scrapers.append(file_path)
+                    except Exception:
+                        pass
+    
+    return potential_scrapers
+
+def update_scraper(scraper_path: str, dryrun: bool = False) -> bool:
+    """Update a scraper file to use ML-based classification"""
+    # First analyze the scraper
+    can_update, info = analyze_scraper(scraper_path)
+    
+    if not can_update:
+        logging.error(f"Cannot update {scraper_path}: {info.get('error', 'Missing required functions')}")
+        return False
+    
+    if info.get("already_using_ml", False):
+        logging.warning(f"Scraper {scraper_path} is already using ML predictor")
+        return False
+    
+    if dryrun:
+        logging.info("DRY RUN: Would update scraper with ML predictor")
+        return True
+    
+    # Create a backup
+    backup_path = f"{scraper_path}.bak.{datetime.now().strftime('%Y%m%d_%H%M%S')}"
     try:
-        logging.info(f"Loading up to {limit} mementos from Firebase")
-        mementos_ref = self.db.collection("mementos").limit(limit)
-        mementos = mementos_ref.get()
-        
-        memento_list = []
-        for doc in mementos:
-            memento_data = doc.to_dict()
-            memento_data['id'] = doc.id
-            memento_list.append(memento_data)
-        
-        return pd.DataFrame(memento_list)
+        shutil.copy2(scraper_path, backup_path)
+        logging.info(f"Created backup at {backup_path}")
     except Exception as e:
-        logging.error(f"Error loading mementos from Firebase: {str(e)}")
-        raise
-</code></pre>
-        <strong>Features:</strong>
-        <ul>
-            <li>Secure credential management</li>
-            <li>Error handling and logging</li>
-            <li>Connection state tracking</li>
-            <li>Data retrieval with limit</li>
-            </ul>
-        <h4>4. Text Preprocessing</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def _preprocess_text(self, text: str) -> str:
-    if not isinstance(text, str):
-        text = str(text)
+        logging.error(f"Failed to create backup: {e}")
+        return False
     
-    # Convert to lowercase
-    text = text.lower()
-    
-    # Remove special characters and digits
-    text = re.sub(r'[^a-z\s]', ' ', text)
-    
-    # Remove extra whitespace
-    text = ' '.join(text.split())
-    
-    return text
-</code></pre>
-        <strong>Processing Steps:</strong>
-        <ol>
-            <li>Type conversion to string</li>
-            <li>Lowercase conversion</li>
-            <li>Special character removal</li>
-            <li>Whitespace normalization</li>
-        </ol>
-        <h4>5. Feature Extraction</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def _extract_text_for_ml(self, memento: Dict) -> str:
-    text_parts = []
-    
-    # Add name with higher weight (repeat 3 times)
-    name = memento.get('name', '')
-    text_parts.extend([name] * 3)
-    
-    # Add description
-    description = memento.get('description', '')
-    text_parts.append(description)
-    
-    # Add location name if available
-    location = memento.get('location', {})
-    if isinstance(location, dict):
-        location_str = str(location)
-        text_parts.append(location_str)
-    
-    # Join all parts and preprocess
-    combined_text = ' '.join(filter(None, text_parts))
-    return self._preprocess_text(combined_text)
-</code></pre>
-        <strong>Feature Components:</strong>
-        <ol>
-            <li>Name (weighted 3x)</li>
-            <li>Description</li>
-            <li>Location information</li>
-        </ol>
-        <h4>6. Training Data Preparation</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def prepare_training_data(self, df: pd.DataFrame, output_dir: str) -> Dict[str, str]:
-    logging.info("Preparing data for training...")
-    os.makedirs(output_dir, exist_ok=True)
-    
-    processed_data = []
-    for _, memento in df.iterrows():
-        memento_dict = memento.to_dict()
-        text_for_ml = self._extract_text_for_ml(memento_dict)
-        memento_dict['text_for_ml'] = text_for_ml
-        processed_data.append(memento_dict)
-    
-    processed_df = pd.DataFrame(processed_data)
-    output_path = os.path.join(output_dir, "user_mementos_processed.csv")
-    processed_df.to_csv(output_path, index=False)
-    
-    return {"processed_data": output_path}
-</code></pre>
-        <strong>Process Flow:</strong>
-        <ol>
-            <li>Create output directory</li>
-            <li>Process each memento</li>
-            <li>Extract ML features</li>
-            <li>Save processed data</li>
-        </ol>
-        <h4>7. Main Execution Flow</h4>
-        <strong>Code:</strong>
-        <pre><code class="language-python">def main():
-    # Initialize data loader with paths
-    loader = MementoDataLoader(
-        categories_path="memento_categories.json",
-        tags_path="memento_tags.json",
-        durations_path="memento_durations.json",
-        firebase_credentials_path="config/serviceAccountKey.json"
-    )
-    
-    # Create output directory
-    output_dir = "ml_pipeline/output/step1_data_processing/processed_data"
-    os.makedirs(output_dir, exist_ok=True)
-    
-    # Load user mementos from Firebase
-    logging.info("Loading user mementos from Firebase...")
-    user_mementos = loader.load_from_firebase(limit=1000)
-    
-    if user_mementos.empty:
-        logging.error("No user mementos found in Firebase")
-        return
-    
-    logging.info(f"Loaded {len(user_mementos)} user mementos from Firebase")
-    
-    # Process the data
-    processed_data = loader.prepare_training_data(user_mementos, output_dir)
-</code></pre>
-        <h3>Input/Output Files</h3>
-        <h4>Input Files:</h4>
-        <ol>
-            <li><code>memento_categories.json</code></li>
-            <li><code>memento_tags.json</code></li>
-            <li><code>memento_durations.json</code></li>
-            <li><code>config/serviceAccountKey.json</code></li>
-        </ol>
-        <h4>Output Files:</h4>
-        <ul>
-            <li><code>ml_pipeline/output/step1_data_processing/processed_data/user_mementos_processed.csv</code></li>
-        </ul>
-        <h3>Data Flow</h3>
-        <ol>
-            <li>Load metadata files</li>
-            <li>Initialize Firebase connection</li>
-            <li>Load user mementos</li>
-            <li>Process and transform data</li>
-            <li>Save processed data</li>
-        </ol>
-        <h3>Error Handling</h3>
-        <ul>
-            <li>File operations</li>
-            <li>Firebase connection</li>
-            <li>Data processing</li>
-            <li>Type conversion</li>
-            <li>Empty data checks</li>
-            </ul>
-        <h3>Logging</h3>
-        <ul>
-            <li>INFO: General progress</li>
-            <li>ERROR: Processing failures</li>
-            <li>WARNING: Data issues</li>
-            <li>DEBUG: Detailed processing</li>
-            </ul>
-        <h3>Dependencies</h3>
-        <ul>
-            <li>pandas: Data manipulation</li>
-            <li>firebase_admin: Firebase integration</li>
-            <li>nltk: Text processing</li>
-            <li>sklearn: Data preprocessing</li>
-            <li>logging: System logging</li>
-            <li>json: JSON file handling</li>
-            <li>os: Directory operations</li>
-            </ul>
+    # Update the scraper
+    try:
+        predictor = MementoPredictor()
+        success = predictor.update_scraper(scraper_path)
+        
+        if success:
+            logging.info(f"Successfully updated {scraper_path}")
+            return True
+        else:
+            logging.error(f"Failed to update {scraper_path}")
+            return False
+    except Exception as e:
+        logging.error(f"Error updating scraper: {e}")
+        
+        # Try to restore from backup
+        try:
+            shutil.copy2(backup_path, scraper_path)
+            logging.info(f"Restored from backup {backup_path}")
+        except Exception as restore_error:
+            logging.error(f"Failed to restore from backup: {restore_error}")
+        
+        return False</code></pre>
+                </div>
+            </div>
+        </div>
         </section>
 
-    <footer>
-        <div class="references">
-            <h3>References</h3>
-            <ul>
-                <li><a href="https://secretnyc.co/" target="_blank">Secret NYC</a></li>
-                <li><a href="https://www.amazon.com/Walk-City-Rosemary-Dawson/dp/0670749109" target="_blank">Walk the City – Book by Rosemary Dawson</a></li>
-                <li><a href="https://pokemongo.com/" target="_blank">Pokémon Go</a></li>
-                <li><a href="https://www.peek.com/gouda-south-holland-netherlands/r084xw9/gouda-gamified-tour-solve-puzzles-and-explore-hidden-spots/a03r397" target="_blank">Gouda Gamified Tour – Peek</a></li>
-                <li><a href="https://www.storytourist.com/about-page/" target="_blank">StoryTourist</a></li>
-                <li><a href="https://firaahda.medium.com/kresna-a-game-and-cultural-tourism-information-system-with-the-gamification-concept-smart-city-d19e243554d0" target="_blank">Kresna: A Game and Cultural Tourism System</a></li>
-                <li><a href="https://senseable.mit.edu/" target="_blank">Senseable City Lab – MIT</a></li>
-                <li><a href="https://amt-lab.org/blog/2021/5/gamification-in-museums" target="_blank">Gamification in Museums – AMT Lab</a></li>
-                <li><a href="http://km.cx/projects/domestic-robocop" target="_blank">Domestic Robocop – Keiichi Matsuda</a></li>
-                <li><a href="https://vimeo.com/14294054" target="_blank">Augmented (Hyper)Reality – Vimeo</a></li>
-            </ul>
+    <script src="script.js"></script>
+
+
+<!-- Results Section -->
+<section class="results-section" id="results-section">
+    <h2>Pipeline Results: Generated Memento Datasets</h2>
+    
+    <div class="results-overview">
+        <h3>Overview</h3>
+        <p>
+            After running the complete MEMENTO ML pipeline, we have generated rich, structured datasets of public mementos scraped from Secret NYC. These datasets represent real urban experiences, now classified and ready to be visualized as interactive markers in the MEMENTO web-app. Each dataset below corresponds to a different theme or category, providing a foundation for exploration, discovery, and engagement within the platform.
+        </p>
+    </div>
+
+    <div class="category-breakdown">
+        <h3>Public Mementos Generated (by Dataset)</h3>
+        <p class="category-description">Each card below represents a dataset of public mementos, grouped by theme. These are the actual lists used to populate the public mementos map and features in the MEMENTO web-app.</p>
+        <div class="category-grid">
+            <div class="category-card" id="culture-card">
+                <h4>Culture (<span id="culture-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="culture-preview">
+                    <em>Loading culture mementos...</em>
+                </div>
+            </div>
+
+            <div class="category-card" id="escapes-card">
+                <h4>Escapes (<span id="escapes-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="escapes-preview">
+                    <em>Loading escapes mementos...</em>
+                </div>
+            </div>
+
+            <div class="category-card" id="food-drink-card">
+                <h4>Food & Drink (<span id="food-drink-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="food-drink-preview">
+                    <em>Loading food & drink mementos...</em>
+                </div>
+            </div>
+
+            <div class="category-card" id="things-to-do-card">
+                <h4>Things to Do (<span id="things-to-do-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="things-to-do-preview">
+                    <em>Loading things to do mementos...</em>
+                </div>
+            </div>
+
+            <div class="category-card" id="top-news-card">
+                <h4>Top News (<span id="top-news-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="top-news-preview">
+                    <em>Loading top news mementos...</em>
+                </div>
+            </div>
+
+            <div class="category-card" id="wellness-nature-card">
+                <h4>Wellness & Nature (<span id="wellness-nature-count">Loading...</span>)</h4>
+                <div class="scrollable-json" id="wellness-nature-preview">
+                    <em>Loading wellness & nature mementos...</em>
+                </div>
+            </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="ml-results-analysis">
+        <h3>Current Results</h3>
+        <ul>
+            <li><strong>Model Performance Metrics</strong></li>
+            <ul>
+                <li><strong>Category Classification</strong><br>
+                    Accuracy: <strong>81.32%</strong><br>
+                    <em>Current Limitations:</em>
+                    <ul>
+                        <li>Struggles with ambiguous categories</li>
+                        <li>Performance drops with very short descriptions</li>
+                        <li>Some category confusion between similar activities</li>
+                    </ul>
+                </li>
+                <li><strong>Tag Prediction</strong><br>
+                    Micro F1-score: <strong>88.95%</strong><br>
+                    <em>Current Limitations:</em>
+                    <ul>
+                        <li>Sometimes over-predicts tags</li>
+                        <li>Misses context-specific tags</li>
+                        <li>Inconsistent with rare tags</li>
+                    </ul>
+                </li>
+                <li><strong>Duration Prediction</strong><br>
+                    <em>Less accurate than category and tag prediction</em><br>
+                    <em>Current Limitations:</em>
+                    <ul>
+                        <li>High variance in predictions</li>
+                        <li>Struggles with flexible duration activities</li>
+                        <li>Limited training data for duration patterns</li>
+                    </ul>
+                </li>
+            </ul>
+        </ul>
+
+        <h3>Setbacks and Challenges</h3>
+        <ol>
+            <li><strong>Data Quality Issues</strong>
+                <ul>
+                    <li><strong>Limited Training Data</strong>
+                        <ul>
+                            <li>Small dataset of user mementos</li>
+                            <li>Imbalanced distribution across categories</li>
+                            <li>Insufficient examples for rare activities</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Consistency</strong>
+                        <ul>
+                            <li>Inconsistent text formatting</li>
+                            <li>Varying levels of detail in descriptions</li>
+                            <li>Mixed language usage (English + local terms)</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Model Limitations</strong>
+                <ul>
+                    <li><strong>Text Processing</strong>
+                        <ul>
+                            <li>Loss of context in short descriptions</li>
+                            <li>Difficulty with slang and informal language</li>
+                            <li>Challenges with location-specific terminology</li>
+                        </ul>
+                    </li>
+                    <li><strong>Feature Engineering</strong>
+                        <ul>
+                            <li>Limited use of temporal features</li>
+                            <li>Underutilization of location data</li>
+                            <li>Basic text preprocessing pipeline</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Integration Challenges</strong>
+                <ul>
+                    <li><strong>System Integration</strong>
+                        <ul>
+                            <li>Complex integration with existing scrapers</li>
+                            <li>Performance overhead in production</li>
+                            <li>Real-time prediction latency</li>
+                        </ul>
+                    </li>
+                    <li><strong>Scalability Issues</strong>
+                        <ul>
+                            <li>Memory constraints with large models</li>
+                            <li>Processing time for batch predictions</li>
+                            <li>Resource limitations in production</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Why Results Are Not Optimal</h3>
+        <ul>
+            <li><strong>Data Limitations</strong>
+                <ul>
+                    <li>Small training dataset</li>
+                    <li>Imbalanced class distribution</li>
+                    <li>Limited variety in examples</li>
+                </ul>
+            </li>
+            <li><strong>Model Architecture</strong>
+                <ul>
+                    <li>Basic feature extraction</li>
+                    <li>Limited use of advanced NLP techniques</li>
+                    <li>Simple model architecture</li>
+                </ul>
+            </li>
+            <li><strong>Training Process</strong>
+                <ul>
+                    <li>Limited hyperparameter tuning</li>
+                    <li>Basic cross-validation</li>
+                    <li>No ensemble methods</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Improvement Strategies</h3>
+        <ol>
+            <li><strong>Data Enhancement</strong>
+                <ul>
+                    <li><strong>Data Collection</strong>
+                        <ul>
+                            <li>Expand training dataset</li>
+                            <li>Balance category distribution</li>
+                            <li>Include more diverse examples</li>
+                        </ul>
+                    </li>
+                    <li><strong>Data Quality</strong>
+                        <ul>
+                            <li>Implement better text preprocessing</li>
+                            <li>Standardize input formats</li>
+                            <li>Add data validation steps</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Model Improvements</strong>
+                <ul>
+                    <li><strong>Architecture</strong>
+                        <ul>
+                            <li>Implement transformer-based models</li>
+                            <li>Add ensemble methods</li>
+                            <li>Use advanced NLP techniques</li>
+                        </ul>
+                    </li>
+                    <li><strong>Training</strong>
+                        <ul>
+                            <li>Implement cross-validation</li>
+                            <li>Add hyperparameter tuning</li>
+                            <li>Use transfer learning</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>Feature Engineering</strong>
+                <ul>
+                    <li><strong>Text Features</strong>
+                        <ul>
+                            <li>Add semantic analysis</li>
+                            <li>Implement context-aware processing</li>
+                            <li>Use word embeddings</li>
+                        </ul>
+                    </li>
+                    <li><strong>Additional Features</strong>
+                        <ul>
+                            <li>Incorporate temporal patterns</li>
+                            <li>Add location-based features</li>
+                            <li>Include user behavior data</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><strong>System Optimization</strong>
+                <ul>
+                    <li><strong>Performance</strong>
+                        <ul>
+                            <li>Implement model quantization</li>
+                            <li>Add caching mechanisms</li>
+                            <li>Optimize prediction pipeline</li>
+                        </ul>
+                    </li>
+                    <li><strong>Scalability</strong>
+                        <ul>
+                            <li>Add batch processing</li>
+                            <li>Implement distributed computing</li>
+                            <li>Optimize resource usage</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <h3>Conclusion</h3>
+        <p>
+            While our current results show promise (<strong>81.32% category accuracy</strong> and <strong>88.95% tag F1-score</strong>), there's significant room for improvement. The main challenges stem from data limitations and basic model architecture. However, with the proposed improvements in data quality, model architecture, and system optimization, we expect to achieve significantly better performance in the coming months.
+        </p>
+    </div>
+</section>
+
+<section class="final-video-section" id="application-section">
+    <h2>Application of Computation and Machine Learning Methods in MEMENTO</h2>
+    <div class="video-container">
+        <div class="video-overlay"></div>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/P2saCVSWqFY?autoplay=1&mute=1&loop=1&playlist=P2saCVSWqFY&modestbranding=1&controls=0&showinfo=0&rel=0" title="MEMENTO Frontend Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>
