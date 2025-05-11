@@ -1,0 +1,74 @@
+[
+  {
+    "id": "15min",
+    "name": "15 Minutes",
+    "symbol": "⚡",
+    "keywords": ["15 minutes", "quarter hour", "quick stop", "brief moment", "passing", "fleeting"]
+  },
+  {
+    "id": "1hr",
+    "name": "1 Hour",
+    "symbol": "⏱️",
+    "keywords": ["1 hour", "one hour", "hour long", "60 minutes", "quick visit"]
+  },
+  {
+    "id": "1-3hrs",
+    "name": "1-3 Hours",
+    "symbol": "⌛",
+    "keywords": ["1-3 hours", "couple of hours", "few hours", "2-3 hours", "short visit"]
+  },
+  {
+    "id": "3-6hrs",
+    "name": "3-6 Hours",
+    "symbol": "🌅",
+    "keywords": ["3-6 hours", "half day", "several hours", "3 to 6 hours", "afternoon"]
+  },
+  {
+    "id": "6-12hrs",
+    "name": "6-12 Hours",
+    "symbol": "🌞",
+    "keywords": ["6-12 hours", "full day", "all day", "day long", "6 to 12 hours"]
+  },
+  {
+    "id": "24hrs",
+    "name": "A Day",
+    "symbol": "🌙",
+    "keywords": ["24 hours", "full day", "overnight", "day and night", "daily", "one day"]
+  },
+  {
+    "id": "1-week",
+    "name": "A Week",
+    "symbol": "📅",
+    "keywords": ["week", "7 days", "weekly", "one week", "seven days"]
+  },
+  {
+    "id": "1-month",
+    "name": "A Month",
+    "symbol": "📆",
+    "keywords": ["month", "30 days", "monthly", "one month", "thirty days"]
+  },
+  {
+    "id": "1-season",
+    "name": "A Season",
+    "symbol": "🔄",
+    "keywords": ["season", "3 months", "quarter", "seasonal", "three months"]
+  },
+  {
+    "id": "1-year",
+    "name": "A Year",
+    "symbol": "📅",
+    "keywords": ["year", "annual", "yearly", "12 months", "365 days", "one year"]
+  },
+  {
+    "id": "eternal",
+    "name": "Eternal",
+    "symbol": "♾️",
+    "keywords": ["permanent", "always", "forever", "eternal", "ongoing", "permanent installation", "never ending"]
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "symbol": "🗂️",
+    "keywords": ["other", "miscellaneous", "various", "general", "undefined", "diverse"]
+  }
+] 

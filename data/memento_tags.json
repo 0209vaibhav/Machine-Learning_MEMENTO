@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ephemeral",
+    "name": "Ephemeral",
+    "symbol": "🌀",
+    "keywords": ["temporary", "fleeting", "short-lived", "momentary", "brief", "passing", "transient", "ephemeral"]
+  },
+  {
+    "id": "unmapped",
+    "name": "Unmapped",
+    "symbol": "📍",
+    "keywords": ["hidden", "undiscovered", "secret", "unknown", "unexplored", "off-map", "unmapped", "new"]
+  },
+  {
+    "id": "niche",
+    "name": "Niche/Cult",
+    "symbol": "🧬",
+    "keywords": ["niche", "cult", "unique", "specialized", "specific", "dedicated", "underground", "exclusive"]
+  },
+  {
+    "id": "emotional",
+    "name": "Emotionally Charged",
+    "symbol": "💫",
+    "keywords": ["emotional", "moving", "touching", "powerful", "intense", "meaningful", "sentimental", "charged"]
+  },
+  {
+    "id": "hidden",
+    "name": "Hidden Gem",
+    "symbol": "🕵️",
+    "keywords": ["hidden", "secret", "gem", "treasure", "undiscovered", "special", "unique", "rare"]
+  },
+  {
+    "id": "unexpected",
+    "name": "Unexpected Encounter",
+    "symbol": "🎭",
+    "keywords": ["unexpected", "surprise", "random", "spontaneous", "unplanned", "chance", "serendipity", "encounter"]
+  },
+  {
+    "id": "reflective",
+    "name": "Reflective",
+    "symbol": "🪞",
+    "keywords": ["reflective", "thoughtful", "contemplative", "meditative", "introspective", "quiet", "peaceful", "mindful"]
+  },
+  {
+    "id": "unpleasant",
+    "name": "Unpleasant Truth",
+    "symbol": "💔",
+    "keywords": ["unpleasant", "negative", "harsh", "difficult", "truth", "reality", "uncomfortable", "challenging"]
+  },
+  {
+    "id": "rare",
+    "name": "Once-in-a-While",
+    "symbol": "⏳",
+    "keywords": ["rare", "occasional", "infrequent", "special", "unique", "once", "limited", "uncommon"]
+  },
+  {
+    "id": "recurring",
+    "name": "Recurring Ritual",
+    "symbol": "🔄",
+    "keywords": ["recurring", "regular", "ritual", "routine", "repeated", "cycle", "tradition", "periodic"]
+  },
+  {
+    "id": "local",
+    "name": "Local Flavor",
+    "symbol": "🧃",
+    "keywords": ["local", "authentic", "neighborhood", "community", "native", "regional", "homegrown", "traditional"]
+  },
+  {
+    "id": "performative",
+    "name": "Performative",
+    "symbol": "💃",
+    "keywords": ["performance", "show", "act", "display", "theatrical", "dramatic", "staged", "artistic"]
+  },
+  {
+    "id": "blink",
+    "name": "Blink and You Miss It",
+    "symbol": "👀",
+    "keywords": ["quick", "fast", "brief", "instant", "fleeting", "momentary", "rapid", "swift"]
+  },
+  {
+    "id": "social-heavy",
+    "name": "Highly Social",
+    "symbol": "🧲",
+    "keywords": ["social", "crowded", "popular", "busy", "gathering", "community", "interactive", "lively"]
+  },
+  {
+    "id": "nightlife",
+    "name": "Nightlife Pulse",
+    "symbol": "🌃",
+    "keywords": ["night", "nightlife", "evening", "late", "party", "entertainment", "club", "bar"]
+  },
+  {
+    "id": "touristy",
+    "name": "Touristy Yet Fun",
+    "symbol": "🧳",
+    "keywords": ["tourist", "popular", "attraction", "famous", "landmark", "sightseeing", "travel", "visit"]
+  },
+  {
+    "id": "clean-cut",
+    "name": "Over-Polished",
+    "symbol": "🧼",
+    "keywords": ["clean", "polished", "refined", "pristine", "perfect", "organized", "neat", "orderly"]
+  },
+  {
+    "id": "beginner",
+    "name": "First-Time Friendly",
+    "symbol": "🐣",
+    "keywords": ["beginner", "friendly", "easy", "accessible", "starter", "introduction", "basic", "simple"]
+  },
+  {
+    "id": "iconic",
+    "name": "Iconic Landmark",
+    "symbol": "🏙️",
+    "keywords": ["iconic", "landmark", "famous", "well-known", "recognizable", "notable", "significant", "classic"]
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "symbol": "🗂️",
+    "keywords": ["other", "miscellaneous", "various", "general", "undefined", "diverse"]
+  }
+]

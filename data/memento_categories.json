@@ -1,0 +1,122 @@
+[
+  {
+    "id": "architecture",
+    "name": "Architecture",
+    "symbol": "🏛️",
+    "keywords": ["building", "structure", "design", "architecture", "landmark", "historic", "monument", "architectural"]
+  },
+  {
+    "id": "urban-nature",
+    "name": "Urban Nature",
+    "symbol": "🌿",
+    "keywords": ["park", "garden", "nature", "green space", "plants", "trees", "urban nature", "outdoor"]
+  },
+  {
+    "id": "sky-weather",
+    "name": "Sky & Weather",
+    "symbol": "🌈",
+    "keywords": ["sky", "weather", "sunset", "sunrise", "clouds", "rainbow", "storm", "atmospheric"]
+  },
+  {
+    "id": "cultural",
+    "name": "Cultural Spotlight",
+    "symbol": "🎭",
+    "keywords": ["art", "culture", "exhibition", "museum", "gallery", "performance", "cultural", "show"]
+  },
+  {
+    "id": "mood-music",
+    "name": "Mood & Music",
+    "symbol": "🎧",
+    "keywords": ["music", "concert", "live", "performance", "band", "DJ", "mood", "atmosphere"]
+  },
+  {
+    "id": "creature",
+    "name": "Creature Sighting",
+    "symbol": "🐾",
+    "keywords": ["animal", "bird", "wildlife", "pet", "creature", "sighting", "nature", "fauna"]
+  },
+  {
+    "id": "street-food",
+    "name": "Street Food",
+    "symbol": "🍴",
+    "keywords": ["food", "street food", "vendor", "cuisine", "eat", "dining", "restaurant", "snack"]
+  },
+  {
+    "id": "social",
+    "name": "Social Gathering",
+    "symbol": "👥",
+    "keywords": ["social", "gathering", "meetup", "event", "community", "people", "group", "crowd"]
+  },
+  {
+    "id": "sport",
+    "name": "Sport in Action",
+    "symbol": "⚽",
+    "keywords": ["sport", "game", "play", "athletic", "exercise", "fitness", "activity", "competition"]
+  },
+  {
+    "id": "poetic",
+    "name": "Poetic Reflection",
+    "symbol": "✍️",
+    "keywords": ["poetry", "reflection", "contemplation", "writing", "art", "creative", "expression", "thoughtful"]
+  },
+  {
+    "id": "folklore",
+    "name": "Urban Folklore",
+    "symbol": "💡",
+    "keywords": ["story", "history", "legend", "folklore", "myth", "tradition", "tale", "cultural"]
+  },
+  {
+    "id": "transition",
+    "name": "City in Transition",
+    "symbol": "🏗️",
+    "keywords": ["construction", "change", "development", "transition", "transformation", "progress", "growth", "evolution"]
+  },
+  {
+    "id": "unpleasant",
+    "name": "Unpleasant Spot",
+    "symbol": "⚠️",
+    "keywords": ["unpleasant", "warning", "danger", "avoid", "caution", "hazard", "issue", "problem"]
+  },
+  {
+    "id": "public-event",
+    "name": "Public Event",
+    "symbol": "👥",
+    "keywords": ["event", "public", "gathering", "festival", "celebration", "parade", "fair", "show"]
+  },
+  {
+    "id": "popup-culture",
+    "name": "Pop-Up Culture",
+    "symbol": "🛍️",
+    "keywords": ["popup", "temporary", "shop", "market", "store", "retail", "exhibition", "installation"]
+  },
+  {
+    "id": "playful",
+    "name": "Play & Participation",
+    "symbol": "🎮",
+    "keywords": ["play", "game", "fun", "interactive", "participation", "activity", "entertainment", "recreation"]
+  },
+  {
+    "id": "learning",
+    "name": "City Learning",
+    "symbol": "🎓",
+    "keywords": ["learn", "education", "workshop", "class", "course", "training", "knowledge", "study"]
+  },
+  {
+    "id": "tranquil",
+    "name": "Tranquil Corners",
+    "symbol": "🕊️",
+    "keywords": ["quiet", "peaceful", "calm", "tranquil", "relaxing", "serene", "meditation", "rest"]
+  },
+  {
+    "id": "experimental",
+    "name": "Experimental Urbanism",
+    "symbol": "🧪",
+    "keywords": ["experiment", "innovation", "urban", "design", "project", "initiative", "pilot", "test"]
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "symbol": "🗂️",
+    "keywords": ["other", "miscellaneous", "various", "general", "undefined", "diverse"]
+  }
+]

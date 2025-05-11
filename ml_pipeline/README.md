@@ -2,6 +2,19 @@
 
 This pipeline processes user mementos and scraped data through ML models to classify them into categories, tags, and durations.
 
+## Setup
+
+### Firebase Credentials Setup
+
+1. Go to the [Firebase Console](https://console.firebase.google.com/)
+2. Select your project
+3. Go to Project Settings > Service Accounts
+4. Click "Generate New Private Key"
+5. Save the downloaded JSON file as `firebase-credentials.json` in the `ml_pipeline` directory
+6. Make sure the file is not tracked by git (it's already in .gitignore)
+
+Note: Never commit your `firebase-credentials.json` file to version control. Use the provided `firebase-credentials.template.json` as a reference for the required format.
+
 ## Pipeline Steps
 
 1. **Data Loading** (`step1_data_loader.py`)
@@ -101,4 +114,4 @@ ml_pipeline/
 - User mementos from Firebase are used as training data
 - Scraped data from Secret NYC is used for testing/classification
 - Models are trained on real user data to ensure quality predictions
-- Integration with the main system happens in step 7 
+- Integration with the main system happens in step 7

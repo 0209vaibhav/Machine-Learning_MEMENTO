@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Role of Machine Learning and Computation in MEMENTO by Vaibhav Jain</title>
+    <title>Role of Machine Learning and Computation in memento by Vaibhav Jain</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Ink+Free&family=Roboto+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -41,40 +41,116 @@
     <nav class="article-nav">
         <a href="#overview-section" class="active">Overview</a>
         <a href="#introduction-section">Introduction</a>
-        <a href="#pipeline-section">Pipeline</a>
+        <a href="#computation-section">Computation</a>
+        <a href="#pipeline-section">Methodology</a>
         <a href="#detailed-pipeline-section">Detailed Pipeline</a>
     </nav>
     <section class="overview-section" id="overview-section">
         <h2>1. Overview</h2>
+        <h3>What is MEMENTO?</h3>
+        <img src="data/cover 2.png" alt="MEMENTO Cover" class="hero-image">
+        <p>MEMENTO is a real-time platform that captures urban experiences happening across the city, aiming to prevent people from drifting into oblivion (the state of being unaware or unconscious of what is happening) and instead transforming those moments into engaging odysseys (a long and eventful or adventurous journey or experience).</p>
+        <p>Unlike conventional platforms, MEMENTO invites users to look beyond the map — to notice, witness, interact, engage, record, react, and reflect on urban experiences as physical mementos, rather than merely experiencing them through virtual screens.</p>
+        <p>It empowers users to discover, capture, and engage with the mementos around them during their commutes, turning everyday journeys into moments of exploration, creation, and interaction.</p>
+        <p>MEMENTO serves as an interaction, intersection, and interplay between the city, its people, and their experiences — a platform:<br>
+            By the people and the city,<br>
+        For the people and the city,<br>
+        Of the people and the city.</p>
+
+<br>
         <h3>Overview of the Computation tools, methods and Machine Learning Pipeline in MEMENTO</h3>
+        <img src="data/mementos-categories,tags duration.png" alt="MEMENTO - the platform" class="section-image">
         <p>The Machine Learning pipeline for public mementos in MEMENTO is designed to automate the classification and tagging of public content sourced from platforms such as Secret NYC, Reddit, NYC Bucket List, Newsbreak, and more. The objective is to replace rule-based keyword matching with a robust multi-label classification model that leverages existing user-generated mementos as training data.</p>
         <p>The pipeline consists of three primary models — Category Classification, Tag Prediction, and Duration Estimation — each trained using supervised learning techniques. Logistic Regression with One-vs-Rest strategy and Random Forest classifiers are employed to predict relevant categories and multiple tags, while Decision Trees handle ordinal duration estimation. Text data undergoes preprocessing, including tokenization, stop word removal, and TF-IDF vectorization to convert descriptions into feature vectors suitable for model training.</p>
         <p>By implementing this ML pipeline, MEMENTO enhances the consistency and accuracy of content classification, enabling the platform to transform unstructured public content into structured, contextually enriched mementos that align with its existing taxonomy.</p>
     </section>
+
     <section class="introduction-section" id="introduction-section">
-        <h2>Introduction</h2>
-        <h3>1.1 What is MEMENTO?</h3>
-        <p>Not just a map of locations —<br>
-but a real-time playground of urban experiences.<br>
-To resist oblivion commutes,<br>
-and embrace engaging odyssey journeys.<br>
-This is MEMENTO.</p>
-        <img src="data/cover 2.png" alt="MEMENTO Cover" class="hero-image">
-        <p>MEMENTO is a real-time platform that captures urban experiences happening across the city, aiming to prevent people from drifting into oblivion (the state of being unaware or unconscious of what is happening) and instead transforming those moments into engaging odysseys (a long and eventful or adventurous journey or experience).</p>
-        <p>Unlike conventional platforms, MEMENTO invites users to look beyond the map — to notice, witness, interact, engage, record, react, and reflect on urban experiences as physical mementos, rather than merely experiencing them through virtual screens.</p>
-        <img src="data/mementos-categories,tags duration.png" alt="MEMENTO - the platform" class="section-image">
-        <p>It empowers users to discover, capture, and engage with the mementos around them during their commutes, turning everyday journeys into moments of exploration, creation, and interaction.</p>
-        <img src="data/core action diagram.svg" alt="MEMENTO - the platform" class="section-image">
-        <p>MEMENTO serves as an interaction, intersection, and interplay between the city, its people, and their experiences — a platform:<br>
-            By the people and the city,<br>
-For the people and the city,<br>
-Of the people and the city.</p>
-<img src="data/for by of copy.png" alt="MEMENTO - the platform" class="section-image">
+        <h2>2. Introduction</h2>
+        <p>MEMENTO is not just a platform — it's a computational ecosystem that leverages a wide spectrum of tools, methods, and data-driven processes to transform everyday urban experiences into interactive, real-time narratives. It integrates multiple computational layers, each playing a distinct role in capturing, analyzing, and visualizing the city's overlooked moments.</p>
+
+        <h3>Computational Framework</h3>
+        <p>MEMENTO's computational framework is divided into two core sections:</p>
+
+        <div class="framework-grid">
+            <div class="framework-section">
+                <h4>Front End</h4>
+                <p>The user-facing web-app interface that brings urban experiences to life through:</p>
+                <ul>
+                    <li><strong>Web-App Creation:</strong> User profiles, memento capture forms, and dynamic content rendering.</li>
+                    <li><strong>Geospatial Mapping:</strong> Mapping mementos in real time using Mapbox and Google Maps API.</li>
+                    <li><strong>Data Visualization:</strong> Creating interactive, data-rich maps using D3.js, highlighting patterns and clusters.</li>
+                    <li><strong>Interactive Mapping:</strong> User-controlled filters, radius selectors, and category-based memento discovery.</li>
+                    <li><strong>Explorer Profile Creation:</strong> User profiles that evolve through collected mementos, creating personalized urban journeys.</li>
+                    <li><strong>User Interaction & Engagement:</strong> Filters, recommendations, and curated lists driven by user behavior.</li>
+                </ul>
+            </div>
+
+            <div class="framework-section">
+                <h4>Back End</h4>
+                <p>The computational backbone that processes, stores, and structures data using:</p>
+                <ul>
+                    <li><strong>Firebase Cloud Storage:</strong> Real-time data storage for media, text, and location data.</li>
+                    <li><strong>Machine Learning Models:</strong> Predictive analysis for recommended mementos based on user behavior and sentiment analysis.</li>
+                    <li><strong>Data Structuring & Input Mapping:</strong> Categorizing mementos by type, tag, duration — transforming raw inputs into structured data.</li>
+                    <li><strong>Memento Analysis & Assignment:</strong> Algorithms assign memento categories, tags, and durations based on user inputs and contextual data.</li>
+                    <li><strong>Google Maps API:</strong> Geolocation data is layered onto dynamic maps, visualizing where experiences occur and how they're clustered.</li>
+                    <li><strong>Public Data Scraping:</strong> Integrating public datasets from online platforms to supplement user-generated mementos with real-time urban events.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="framework-summary">
+            <p>Together, these front-end and back-end components create a cohesive computational ecosystem that transforms urban experiences into interactive, real-time narratives, making the city's overlooked moments discoverable and engaging.</p>
+        </div>
     </section>
 
+    <section class="computation-section" id="computation-section">
+        <h2>3. Role of Computation in MEMENTO</h2>
+        <h3>Computational Workflow</h3>
+        <p>MEMENTO's computational workflow is built around three interconnected processes that form the backbone of the platform's functionality. These processes work in harmony to create a seamless experience for users, enabling them to capture, discover, and engage with urban experiences in real-time. The workflow integrates both front-end user interactions and back-end data processing to maintain a dynamic and responsive system.</p>
+
+        <div class="workflow-images">
+            <div class="workflow-image-caption-group">
+                <img src="data/workflow/workflow-0.jpg" alt="MEMENTO Core actions" class="workflow-image">
+                <p class="workflow-caption">A comprehensive visualization of the MEMENTO platform's computational workflow, illustrating the flow of memento datasets from generation to visualization to exploration, forming the core interaction model of the platform.</p>
+            </div>
+
+            <div class="workflow-steps-description">
+                <h4>Creation of User Mementos:</h4>
+                <p>Users capture real-time urban experiences by uploading media, adding text reflections, and tagging location data. Each memento is categorized using predefined categories, tags, and durations, creating a structured dataset of personal urban moments.</p>
+    
+                <h4>Creation of Public Mementos:</h4>
+                <p>Public mementos are generated through data scraping from online platforms and public datasets. Machine learning methods are used to process and structure this data in real time, aligning it with the MEMENTO format for seamless integration with user-generated content.</p>
+    
+                <h4>Mementos on MEMENTO:</h4>
+                <p>All mementos — both user-generated and public — are populated on the interactive map. Each memento is visualized with geolocation, media, timestamp, name, description, category, tags, and duration. The result is a dynamic map that acts as a real-time playground of urban experiences, accessible and discoverable for all users.</p>
+    
+                <h4>Exploration of Mementos:</h4>
+                <p>Users can explore mementos using various filters and settings. The map allows filtering by categories, tags, duration, distance, and proximity, enabling users to discover nearby mementos, trending content, and curated experiences based on their interests and current location.</p>
+    
+                <h4>Curation of Mementos:</h4>
+                <p>Personalized recommendations are generated based on user profile data, interests, and interaction history. Curated lists include daily mementos, trending mementos, recommended mementos, and mementos located within the user's commuting range, creating a tailored discovery experience for each user.</p>
+            </div>
+
+            <h3>Computational Workflow</h3>
+        <p>MEMENTO's computational workflow is built around three interconnected processes that form the backbone of the platform's functionality. These processes work in harmony to create a seamless experience for users, enabling them to capture, discover, and engage with urban experiences in real-time. The workflow integrates both front-end user interactions and back-end data processing to maintain a dynamic and responsive system.</p>
+            <div class="workflow-image-caption-group">
+                <img src="/data/workflow/workflow-1.jpg" alt="MEMENTO Workflow Diagram" class="workflow-image">
+                <p class="workflow-caption">A detailed diagram of the MEMENTO workflow, showing the flow of memento datasets from generation to visualization to exploration, forming the core interaction model of the platform.</p>
+            </div>
+            <div class="workflow-image-caption-group">
+                <img src="/data/workflow/workflow-2.jpg" alt="MEMENTO Architecture Overview" class="workflow-image">
+                <p class="workflow-caption">A comprehensive overview of the MEMENTO platform's computational architecture, illustrating the flow of memento datasets from generation to visualization to exploration, forming the core interaction model of the platform.</p>
+            </div>
+        </div>
+
+
+
+    </section>
 
     <section class="pipeline-section" id="pipeline-section">
-        <h2>Pipeline Architecture Overview</h2>
+        <h2>Methodology</h2>
         <p>The MEMENTO ML pipeline is designed as a modular, five-step system that transforms raw public content into well-categorized, ML-enhanced mementos. Each step in the pipeline serves a specific purpose and contributes to the overall goal of automated content classification and enrichment.</p>
 
         <div class="pipeline-diagram">
@@ -116,7 +192,7 @@ Of the people and the city.</p>
                     <div class="step-content">
                         <h4>✨ Processing & Classification</h4>
                         <p>Apply models to classify content</p>
-            </div>
+                    </div>
                 </div>
             </div>
             <div class="pipeline-details">
@@ -264,7 +340,7 @@ Of the people and the city.</p>
                                 <li>Feature extraction</li>
                                 <li>Prediction generation</li>
                             </ul>
-            </div>
+                        </div>
                         <div class="pipeline-detail-column">
                             <h4>🛡️ 2. Quality Control</h4>
                             <ul>
@@ -272,7 +348,7 @@ Of the people and the city.</p>
                                 <li>Prediction validation</li>
                                 <li>Error handling</li>
                                 <li>Report generation</li>
-            </ul>
+                            </ul>
                         </div>
                         <div class="pipeline-detail-column">
                             <h4>📦 3. Output Generation</h4>
@@ -281,14 +357,13 @@ Of the people and the city.</p>
                                 <li>Adding predictions and confidence scores</li>
                                 <li>Generating processing reports</li>
                                 <li>Saving results in multiple formats</li>
-            </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-
-        
+        </div>
+    </section>
 
     <section class="detailed-pipeline-section" id="detailed-pipeline-section">
         <h2>Detailed Pipeline Implementation and Methodology</h2>
@@ -610,14 +685,14 @@ def load_from_firebase(self, limit=1000):
             <li>Data processing</li>
             <li>Type conversion</li>
             <li>Empty data checks</li>
-        </ul>
+            </ul>
         <h3>Logging</h3>
         <ul>
             <li>INFO: General progress</li>
             <li>ERROR: Processing failures</li>
             <li>WARNING: Data issues</li>
             <li>DEBUG: Detailed processing</li>
-        </ul>
+            </ul>
         <h3>Dependencies</h3>
         <ul>
             <li>pandas: Data manipulation</li>
@@ -627,7 +702,7 @@ def load_from_firebase(self, limit=1000):
             <li>logging: System logging</li>
             <li>json: JSON file handling</li>
             <li>os: Directory operations</li>
-        </ul>
+            </ul>
         </section>
 
     <footer>
